@@ -1,1 +1,1 @@
-# Team-4-solor-system
+# Team-4-solar-system
