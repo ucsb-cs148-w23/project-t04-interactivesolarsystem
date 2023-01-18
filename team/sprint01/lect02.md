@@ -1,6 +1,6 @@
 Project: Interactive Solar System
 
-Mentor: 
+Mentor: Justin
 
 Meeting Time: lect02 01/17 15:30-16:45
 
