@@ -1,4 +1,5 @@
-<h3> Agreements: </h3>
+<h1> Agreements: </h1>
+
 
 1. Show up on time to every meeting 
 2. Keep communicating with your teammates and update them on your progress
