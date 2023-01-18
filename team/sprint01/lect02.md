@@ -1,26 +1,17 @@
-Project: 
+Project: Interactive Solar System
+
 Mentor: 
 
-Meeting Time: lect02
+Meeting Time: lect02 01/17 15:30-16:45
 
-Type of meeting: <one or several of [sprint planning, daily scrum, sprint review, retrospective, story time]>
-
-Team: Alan Roddick [x], Nagarjun Avaraddy [x], Tobias Höllerer [x], Bryan Terce [x], Vincent Tieu [x], Hunter Xia [x], Kaiwen Li [x], Wei-Yee Go [ ]
+Type of meeting: 
+Mason Ma [x]
+Dingfan Zheng[x]
+Ethan Meade [x]
+Richard Yang [x]
+Elizabeth Armstrong [x]
+Aashay Parab [x]
 
 Scribed Discussion:
 
-Tobias forwarded web technology stack slides. Submitted for comments by the teaching team. Next task: Prepare Lab02. No current roadblocks
 
-Wei-Yee is absent but announced that he finished grading h00. Waiting for instructor feedback. No current roadblocks.
-
-Alan …
-
-Nagarjun…
-
-Bryan…
-
-Vincent…
-
-Hunter…
-
-Kaiwen…
