@@ -1,7 +1,7 @@
-##Regarding me:
+## Regarding me:
 I'm a senior computer science student. I took CS 156 ~2 years ago, and CS 184 last Winter quarter. I'm looking forward to working with the team!
 
-##My Vision for the Project:
+## My Vision for the Project:
 
 I was thinking that by default it would simulate our solar system;
 users would be able to make modifications as described by the description.
