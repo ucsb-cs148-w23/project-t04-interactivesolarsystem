@@ -5,14 +5,14 @@
 Description: we aim to use graphical engine which will produce simulated views of any body in the solar system from any point in space. 
 
 ##
-Aashay Parab
+Aashay Parab aashay322
 
-Dingfan Zheng
+Dingfan Zheng dingfan123
 
 Elizabeth Armstrong 
 
 Ethan Meade 
 
-Richard Yang 
+Richard Yang ruiqiRichard
 
-Mason Ma 
+Mason Ma masonma21
