@@ -1,4 +1,4 @@
-Project: Interactive Solar System
+# Project: Interactive Solar System
 
 Mentor: Justin, Matt
 
@@ -13,7 +13,9 @@ Richard Yang [x]
 Elizabeth Armstrong [x]
 Aashay Parab [x]
 
-Scribed Discussion:
+Everyone is present.
+
+## Scribed Discussion:
 
 Norm Discussion:
 
@@ -29,9 +31,11 @@ Mason: Finish assignments in advance of the deadline.
 
 Richard: Help each other when blocked and continue working hard on our individual parts.
 
+Tech Stack Discussion:
 
+Current options: Unity, OpenGL
 
-
+Definitely we need to do more research on this.
 
 
 
