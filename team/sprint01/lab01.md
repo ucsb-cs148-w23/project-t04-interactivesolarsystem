@@ -1,8 +1,8 @@
-# Project: Interactive Solar System
+# Project Name: Interactive Solar System
 
 Meeting Time: lab01 01/13 13:00-13:50
 
-Type of meeting: sprint planning 
+Type of meeting: preparation for the project, introduction, and sprint planning 
 
 Team: Mason Ma [x]
 Dingfan Zheng[x]
@@ -16,4 +16,3 @@ Everyone is present.
 ## Scribed Discussion:
 
 We created the github repo and everyone did a pull request to submit a file named after ourselves and the NORMS.md file.
-
