@@ -1,5 +1,2 @@
 Kevin Brown, 19 years old, is a first-year college student majoring in astronomy. Recently he took an astronomy course where he needs a 
-convenient graphics tool for showing the relative positions for all planets in 3D space. Kevin want to utilize this tool to determine the way the planets would interact 
-with each other from physics equations in actual world. It would be better if he has the option to delete or add certain planets to the diagram. Although
-there exists other ways to get his needs met now, the current existing solutions are too complicated and only ready to use if we finish setting up several 
-parameters. Also, we will need to wait a very long time to see the display image.
+convenient graphics tool for showing the relative positions for all planets in 3D space. Kevin wants to utilize this tool to determine the way the planets would interact with each other from physics equations in actual world as well. It would be better if he has the option to delete or add certain planets to the diagram. Although there exists other ways to get his needs met now, the current existing solutions are too complicated and only ready to use if we finish setting up several parameters. Also, we will need to wait a very long time to see the display image.
