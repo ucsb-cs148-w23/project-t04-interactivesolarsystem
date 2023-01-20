@@ -11,3 +11,5 @@ Team: Dingfan Zheng[x] Ethan Meade [x] Richard Yang [x] Elizabeth Armstrong [x] 
 Everyone is present.
 
 Deploy our helloworld program.
+
+Work towards more of kanban board.
