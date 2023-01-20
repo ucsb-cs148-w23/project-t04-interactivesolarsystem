@@ -9,6 +9,9 @@ function App() {
         <p>
           Welcome to Interactive Solar System!
         </p>
+        <p>
+          CS 148 Team 4 Project
+        </p>
       </header>
     </div>
   );
