@@ -13,3 +13,7 @@ Everyone is present.
 Deploy our helloworld program.
 
 Work towards more of kanban board.
+
+Main focus: finishing lab02.
+
+Smaller tasks: finishing the readme, kanban board.
