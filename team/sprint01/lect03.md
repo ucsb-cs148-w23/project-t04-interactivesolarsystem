@@ -14,11 +14,17 @@ Talk about technologies to use for the project.
 Catchup on lab01.
 
 Mason: installed Unity and researched on Youtube on potential ideas.
+
 Aashay: worked on lab01.
-Ethan: plan to download Unity and watch tutorial on React
+
+Ethan: plan to download Unity and watch tutorial on React.
+
 Elizabeth: plan to work on hello world and finish up lab01
-Dingfan: installed and registered for Unity and plan to finish lab01
+
+Dingfan: installed and registered for Unity and plan to finish lab01.
+
 Richard: plan to work on helloworld and watched tutorials for future progress.
 
 Helloworld app: javascript 
-to do: problem_scenario.md file
+
+To do: problem_scenario.md file
