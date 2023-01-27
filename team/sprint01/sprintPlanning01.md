@@ -1,6 +1,6 @@
 # Sprint Planning meeting
 
-There were 2 meeting that went into sprint planning, 
+There were 2 meeting that went into sprint planning, one on 01/21, another on 01/24.
 
 ## 01/21
 Meeting Time: 2:38 PM 
