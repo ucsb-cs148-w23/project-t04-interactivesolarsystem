@@ -16,10 +16,10 @@ Elizabeth: Started watching unity tutorial and wrote down sprint planning for la
 
 Dingfan: Setup and familiarized with unity and itch.io
 
-Ethan: 
+Ethan: Found data and watched youtube tutorials on unity.
 
 Aashay: Downloaded and signed up for unity and plan to watch tutorials and learn more on itch.io.
 
 Mason: Finished collecting scripts in planet solar system.
 
-Richard: 
+Richard: Build the unity base app and add packages.
