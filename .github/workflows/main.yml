@@ -1,0 +1,88 @@
+name: Build Project and Publish to itch.io
+on: [push]
+jobs:
+  build:
+    name: Build Project and Publish to itch.io ✨
+    runs-on: ubuntu-latest
+    # This stops builds that are in-progress once a new commit comes in
+    concurrency: 
+      group: unity-build
+      cancel-in-progress: true
+    steps:
+      # Checkout
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          lfs: true
+      # Cache
+      - uses: actions/cache@v2
+        with:
+          path: Library
+          key: Library
+      # Build
+      - name: Build project
+        uses: game-ci/unity-builder@v2
+        env:
+          # Comment this out if you're using a pro license
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          # Un-Comment the following lines if you're using a pro license
+          # UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          # UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          # UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
+        with:
+          targetPlatform: Standalone
+       # Return License (Un-Comment if you're using a pro license)
+       #- name: Return license
+       #  uses: game-ci/unity-return-license@v1
+       #  if: always()
+       # Output
+     # Upload to Itch
+      - uses: josephbmanley/butler-publish-itchio-action@master
+        env:
+          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+          CHANNEL: html5
+          ITCH_GAME: team04-interactivesolarx
+          ITCH_USER: team04-interactivesolarx
+          PACKAGE: build/Standalone
+If you want to build for a different platform replace WebGL with your build target.
+
+After committing and pushing, a new workflow run will appear in the Actions tab of your GitHub page.
+
+Once the workflow run completes you should see Success and a Build.zip file under artifacts. Download it and make sure that it’s working correctly.
+
+If the run didn’t succeed, check the logs of the workflow run and review the steps you’ve taken so far. If none of that helps, consult the documentation for game-ci.
+
+Step 5— Set up automatic publish to itch.io
+
+Now that you’ve got a remote build of your project working it’s time to publish it to itch.io.
+
+Open up main.yml again and replace the Output step with the code below:
+
+      # Upload to Itch
+      - uses: josephbmanley/butler-publish-itchio-action@master
+        env:
+          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+          CHANNEL: html5
+          ITCH_GAME: <Game name goes here (it should be the end of your url)>
+          ITCH_USER: <Username goes here>
+          PACKAGE: build/WebGL
+Replace anything in <> with the appropriate values. If you want to publish a binary replace html5 with win, linux, or mac and replace WebGL with your build target.
+
+After committing and pushing, you should see a new workflow run. Wait for it to finish.
+
+Hop on over to your Edit Project page on itch.io and you should see your build published. If you’re creating an HTML5 build like I did, make sure to check “This file will be played in browser”.
+
+You’re done!
+
+Some important things to know about your new set-up:
+
+If you are using this on a private repository, you will be limited to 2000 minutes of workflow time per month. This can rack up quickly if build times for your project are long so be mindful of it. You can also purchase more time if you need it.
+You are also limited to 500 MB of artifact storage. This shouldn’t be a problem as long as you removed the Output step from main.yml.
+Every commit that is pushed will automatically be published. Make sure your team knows this. If you need more validation look into https://game.ci/docs/github/test-runner.
+Unity
+Game Jams
+Itch
+Github
+
+
+
