@@ -6,9 +6,7 @@ Meeting Time: lect06 01/31 13:00-13:50
 
 Type of meeting: sprint planning and daily scrum
 
-Team: Dingfan Zheng[x] Ethan Meade [x] Richard Yang [x] Elizabeth Armstrong [x] Aashay Parab [x] Mason Ma [ ]
-
-Mason is busy heading back from LA and is reachable via slack.
+Team: Dingfan Zheng[x] Ethan Meade [x] Richard Yang [x] Elizabeth Armstrong [x] Aashay Parab [x] Mason Ma [x]
 
 ## Standup
 
@@ -24,6 +22,8 @@ to stay on top of that
 
 Richard: Wasn't able to make it Sunday, will want to catch up on what ideas are for the MVP, working on learning unity and how to manipulate textures
 Need to figure out how to implement background
+
+Mason: Working on the current issue.
 
 ## Sprint Planning Meeting 2
 
