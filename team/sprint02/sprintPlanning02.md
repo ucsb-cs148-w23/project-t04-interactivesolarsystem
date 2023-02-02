@@ -17,7 +17,7 @@ Richard Yang: Working with Ethan on the same issue and will also contribute to u
 
 Dingfan Zheng: Will work on adding rotation to the planets, contributing to user story #33.
 
-Mason Ma: Absent during meeting but will self-assign issue. 
+Mason Ma: will work on adding transition between start page and main static page
 
 Overall team goal is to work towards an MVP till the code freeze on 02/09/23. The team will aim to build as good of a model as possible and make the project presentable. Will also complete a video presentation before the deadline. 
 
