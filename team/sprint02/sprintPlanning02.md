@@ -5,7 +5,7 @@ Meeting time: 4:08 PM
 
 Meeting Type: Spring Planning Meeting 
 
-Attendance: Ethan Meade [x], Elizabeth Armstrong [x], Aashay Parab [x], Richard Yang [x], Dingfan Zheng [x], Mason Ma [ ] 
+Attendance: Ethan Meade [x], Elizabeth Armstrong [x], Aashay Parab [x], Richard Yang [x], Dingfan Zheng [x], Mason Ma [x] 
 
 Ethan Meade: Will work on add all of the planets and other celestial objects to the night sky in Unity. Contributing to user story #33. 
 
