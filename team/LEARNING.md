@@ -10,3 +10,5 @@ Richard found a site that can easily host the unity project on web and shared th
 Richard commented under a link to video tutorial on how to make a start menu in Unity and shared it with Asshay who is in charge of an issue about start menu. 
 
 Dingfan Commented under a link to video tutorial on how to make a navbar for webapp using nodejs and shared it in the tech_js-node-react-express_help channel.
+
+Mason found a tutorial that shows how to rotate game objects smoothly in Unity.
