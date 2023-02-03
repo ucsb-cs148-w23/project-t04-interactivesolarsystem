@@ -1,21 +1,14 @@
 <h1> Team Retro 1 </h1> 
 
+#Date of Retrospective: 01/27/23
 
-Leader: Mason Ma 
+Lead by: Mason Ma 
+
+Present: Mason Ma [x] Dingfan Zheng[x] Ethan Meade [x] Richard Yang [x] Elizabeth Armstrong [x] Aashay Parab [x]
+
+Absent:
 
 Methodology used: Start/Stop/Continue 
-
-Project: Interactive Solar System
-
-Mentor: Justin, Matt
-
-Meeting Time: lab03 01/27 13:00-13:50
-
-Type of meeting: First Retro
-
-Team: Mason Ma [x] Dingfan Zheng[x] Ethan Meade [x] Richard Yang [x] Elizabeth Armstrong [x] Aashay Parab [x]
-
-Retro Leader: Mason Ma
 
 Retrospective:
 
