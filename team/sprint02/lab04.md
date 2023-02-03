@@ -23,3 +23,12 @@ Aashay: Started adding start and stop button.
 Mason: Started working on adding the transition between start page and static main page.
 
 Richard: Finished adding the planets.
+
+
+MVP planning
+1. Background
+2. Start page
+3. Revolving planets and orbiting planets
+4. Pause and play buttons
+5. Clickable sun for now (potentially for all planets after MVP)
+  - new page
