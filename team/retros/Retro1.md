@@ -1,11 +1,9 @@
 <h1> Team Retro 1 </h1> 
 
-#Date of Retrospective: 01/27/23
+# Date of Retrospective: 01/27/23
 
 Lead by: Mason Ma 
-
 Present: Mason Ma [x] Dingfan Zheng[x] Ethan Meade [x] Richard Yang [x] Elizabeth Armstrong [x] Aashay Parab [x]
-
 Absent:
 
 Methodology used: Start/Stop/Continue 
