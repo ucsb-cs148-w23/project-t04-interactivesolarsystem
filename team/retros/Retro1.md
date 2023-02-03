@@ -13,7 +13,7 @@ Methodology used: Start/Stop/Continue
 Link to Document: https://docs.google.com/document/d/1t2FmfkJeii17jzyS7_elypP7uX-FfkaT-3VwDx6OzrE/edit?usp=sharing
 
 
-Retrospective:
+## Retrospective:
 
 ### Stop:
 
@@ -56,6 +56,14 @@ Stand up meetings every class period on progress
 
 Delegating tasks to team members 
 
+
+## Action item
+
+* a goal: Continue working on issues and respond to changes quickly.
+
+* a change: Review the Kanban board at the beginning of class together in case we might miss any issues.
+
+* a measurement: Communicate with team members on slack, help each other when in need, and share learning resources.
 
 
 ## Experiment for next sprint: 
