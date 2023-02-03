@@ -31,4 +31,8 @@ MVP planning
 3. Revolving planets and orbiting planets
 4. Pause and play buttons
 5. Clickable sun for now (potentially for all planets after MVP)
-  - new page
+
+Potential after MVP:
+1. Clickable for all planets
+2. Rotation planets
+3. Changing settings
