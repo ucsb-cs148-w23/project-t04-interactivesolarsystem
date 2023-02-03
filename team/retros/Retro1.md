@@ -15,7 +15,7 @@ Link to Document: https://docs.google.com/document/d/1t2FmfkJeii17jzyS7_elypP7uX
 
 Retrospective:
 
-Stop:
+### Stop:
 
 Working on individual projects/ things that can be done later during class/meeting time 
 
@@ -27,7 +27,7 @@ Waiting to finish an assignment in the last minute V
 
 
 
-Start:
+### Start:
 
 Review the Kanban board at the beginning of class together (during standup) VVVVV
 
@@ -46,8 +46,7 @@ Create PRs and assign reviewers after completing one issue V
 Require 2 reviewers for every pull request
 
 
-
-Continue:
+### Continue:
 
 Communicating with team members on slack  VVVV
 
@@ -59,7 +58,7 @@ Delegating tasks to team members
 
 
 
-Experiment for next sprint: 
+## Experiment for next sprint: 
 
 Start: Review the Kanban board at the beginning of class together (during standup)
 
@@ -69,7 +68,7 @@ Continue: Communicating with team members on slack
 
 
 
-Retro Assessment:
+## Retro Assessment:
 
 * A brief description of what retro outline or process you used:
 
@@ -85,7 +84,6 @@ First, we wrote down things under each section (start/stop/continue) then each o
 I think if the whole team can write down things before the retro, the discussion would be more effective and we will have more time to come up with measurements to help the team achieve the goal.
 
 
-
-Retro Outcome:
+## Retro Outcome:
 
 I think we did a good job in communicating with team members on slack, helping each other when in need, and sharing learning resources. We need to continue reviewing the Kanban board at the beginning of class together in case we might miss any issues.
