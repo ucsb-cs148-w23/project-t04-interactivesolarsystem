@@ -13,28 +13,43 @@ Methodology used: Start/Stop/Continue
 Retrospective:
 
 Stop:
+
 Working on individual projects/ things that can be done later during class/meeting time 
+
 Waiting for next meeting to ask for next steps VV
+
 Forgetting updating the Kanban Board V VV
+
 Waiting to finish an assignment in the last minute V
+
 
 Start:
 Review the Kanban board at the beginning of class together (during standup) VVVVV
+
 Learning unity 3D Animation techniques (through learn.unity.com or other resources)
+
 Having pairs of people to code review each other. 
+
 Communicating/Planning more during class time V V
+
 Reaching out to Matthew / Jason for guidance / advice
+
 Communicating more about roadblocks and turning to groupmates for possible solutions
+
 Create PRs and assign reviewers after completing one issue V
+
 Require 2 reviewers for every pull request
 
 
 Continue:
-Communicating with team members on slack  VVVV
-Working on issues and toward MVP demo
-Stand up meetings every class period on progress
-Delegating tasks to team members 
 
+Communicating with team members on slack  VVVV
+
+Working on issues and toward MVP demo
+
+Stand up meetings every class period on progress
+
+Delegating tasks to team members 
 
 
 Experiment for next sprint: 
