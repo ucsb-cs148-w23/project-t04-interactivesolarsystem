@@ -16,7 +16,7 @@ Elizabeth: Started working on adding background.
 
 Dingfan: Started working on adding the rotations of the planets.
 
-Ethan: Finished his own user story and attempting to help others with theirs now.
+Ethan: Pushed through the physical models of the planets.
 
 Aashay: Started adding start and stop button.
 
