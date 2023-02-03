@@ -6,7 +6,7 @@ Lead by: Mason Ma
 
 Present: Mason Ma [x] Dingfan Zheng[x] Ethan Meade [x] Richard Yang [x] Elizabeth Armstrong [x] Aashay Parab [x]
 
-Absent:
+Absent: Everyone is present.
 
 Methodology used: Start/Stop/Continue 
 
