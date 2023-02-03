@@ -10,6 +10,9 @@ Absent:
 
 Methodology used: Start/Stop/Continue 
 
+Link to Document: https://docs.google.com/document/d/1t2FmfkJeii17jzyS7_elypP7uX-FfkaT-3VwDx6OzrE/edit?usp=sharing
+
+
 Retrospective:
 
 Stop:
@@ -23,7 +26,9 @@ Forgetting updating the Kanban Board V VV
 Waiting to finish an assignment in the last minute V
 
 
+
 Start:
+
 Review the Kanban board at the beginning of class together (during standup) VVVVV
 
 Learning unity 3D Animation techniques (through learn.unity.com or other resources)
@@ -41,6 +46,7 @@ Create PRs and assign reviewers after completing one issue V
 Require 2 reviewers for every pull request
 
 
+
 Continue:
 
 Communicating with team members on slack  VVVV
@@ -52,6 +58,7 @@ Stand up meetings every class period on progress
 Delegating tasks to team members 
 
 
+
 Experiment for next sprint: 
 
 Start: Review the Kanban board at the beginning of class together (during standup)
@@ -59,6 +66,7 @@ Start: Review the Kanban board at the beginning of class together (during standu
 Stop: Forgetting updating the Kanban Board
 
 Continue: Communicating with team members on slack
+
 
 
 Retro Assessment:
@@ -77,10 +85,7 @@ First, we wrote down things under each section (start/stop/continue) then each o
 I think if the whole team can write down things before the retro, the discussion would be more effective and we will have more time to come up with measurements to help the team achieve the goal.
 
 
+
 Retro Outcome:
 
 I think we did a good job in communicating with team members on slack, helping each other when in need, and sharing learning resources. We need to continue reviewing the Kanban board at the beginning of class together in case we might miss any issues.
-
-
-Link to Document: https://docs.google.com/document/d/1t2FmfkJeii17jzyS7_elypP7uX-FfkaT-3VwDx6OzrE/edit?usp=sharing
-
