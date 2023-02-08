@@ -13,7 +13,7 @@ public class Gravity_Handler : MonoBehaviour
     // a change of units problem, where we convert m (meters) to AU and kg (kilograms) to
     // Earth masses (or some other large mass)
 
-    // Each Unity distance unit is measured to about 0.2 AU
+    // Each Unity distance unit is measured to about 0.05 AU
 
     //const float G = 0.00000000006674f;
     const float G = 6.674f; // incorrect value, but other value caused things to barely move
@@ -22,6 +22,8 @@ public class Gravity_Handler : MonoBehaviour
     public static List<Gravity_Handler> Gravity_Handlers;
 
     public Rigidbody rb;
+
+    public Vector3 init_velocity = Vector3.zero;
 
     void FixedUpdate () {
 
@@ -45,6 +47,7 @@ public class Gravity_Handler : MonoBehaviour
 
         }
 
+        this.rb.velocity = init_velocity;
         Gravity_Handlers.Add(this);
 
     }

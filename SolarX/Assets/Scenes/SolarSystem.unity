@@ -542,6 +542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1140496582}
+  init_velocity: {x: 0, y: 0, z: 0}
 --- !u!1001 &1200879363
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -633,6 +634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1213124212}
+  init_velocity: {x: 10, y: 0, z: 0}
 --- !u!54 &1213124212
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -760,6 +762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1292186096}
+  init_velocity: {x: 0, y: 0, z: 0}
 --- !u!1001 &1431230103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1103,6 +1106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2076245397}
+  init_velocity: {x: 0, y: 0, z: 0}
 --- !u!54 &2076245397
 Rigidbody:
   m_ObjectHideFlags: 0
