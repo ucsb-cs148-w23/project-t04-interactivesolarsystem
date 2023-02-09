@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.04365709, g: 0.044818856, b: 0.05955075, a: 1}
+  m_IndirectSpecularColor: {r: 0.043650553, g: 0.044813525, b: 0.0595436, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1650,7 +1650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theText: "Venus:\nIt's a cloud-swaddled planet named for a love goddess, often
+  theText: "Venus:\n\nIt's a cloud-swaddled planet named for a love goddess, often
     called Earth\u2019s twin. But pull up a bit closer, and Venus turns hellish.
     Our nearest planetary neighbor, the second planet from the Sun, has a surface
     hot enough to melt lead. The atmosphere is so thick that, from the surface, the
@@ -2501,12 +2501,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theText: "Mars:\n\nMars is no place for the faint-hearted. It\u2019s dry, rocky,
-    and bitter cold. The fourth planet from the Sun, Mars is one of Earth's two closest
-    planetary neighbors (Venus is the other). Mars is one of the easiest planets
-    to spot in the night sky \u2013 it looks like a bright red point of light. Mars
-    is one of the most explored bodies in our solar system, and it's the only planet
-    where we've sent rovers to roam the alien landscape."
+  theText: "Jupiter:\n\nJupiter is the fifth planet from our Sun and is, by far,
+    the largest planet in the solar system \u2013 more than twice as massive as all
+    the other planets combined. Jupiter's stripes and swirls are actually cold, windy
+    clouds of ammonia and water, floating in an atmosphere of hydrogen and helium.
+    Jupiter\u2019s iconic Great Red Spot is a giant storm bigger than Earth that
+    has raged for hundreds of years.\n\nJupiter is surrounded by dozens of moons.
+    Jupiter also has several rings, but unlike the famous rings of Saturn, Jupiter\u2019s
+    rings are very faint and made of dust, not ice."
 --- !u!54 &1438462359
 Rigidbody:
   m_ObjectHideFlags: 0
