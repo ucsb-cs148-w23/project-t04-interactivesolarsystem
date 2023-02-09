@@ -9,14 +9,11 @@ We aim to use graphical engine which will produce simulated views of planets in 
 User roles: users looking to simulated different views of the solar system. There will be no restriction to any user as anyone is welcomed to use our simulator. 
 
 ##
-Aashay Parab aashay322
-
-Dingfan Zheng dingfan123
-
-Elizabeth Armstrong lzbtharmstrong
-
-Ethan Meade ethanmeade
-
-Richard Yang ruiqiRichard
-
-Mason Ma masonma21
+|Name | Github username |
+| ---- | --------------- |
+| Aashay Parab | aashay322 |
+| Dingfan Zheng | dingfan123 |
+| Elizabeth Armstrong | lzbtharmstrong |
+| Ethan Meade | ethanmeade |
+| Richard Yang | ruiqiRichard |
+| Mason Ma | masonma21 |
