@@ -1,5 +1,5 @@
 # MVP Demo Information
-## Demo video linke
+## Demo video link
 
 TODO
 
