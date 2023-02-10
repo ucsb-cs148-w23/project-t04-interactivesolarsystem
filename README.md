@@ -6,13 +6,8 @@ Tech stack: Unity, itch.io platform.
 Description: 
 We aim to use graphical engine which will produce simulated views of planets in the solar system from any point in space. Our targeted users are likely to be students who are looking to learn more about the solar system or explore material beyond class level. Through this interactive experience, users would find it more interesting and easier to learn about the solar system.
 
-## How to Use
-Go to this link:  
-https://team04-interactivesolarx.itch.io/team04-interactivesolarx 
-
- You will be prompted to enter a password, enter: cs148winter 
- 
- *** NOTE: Safari does not appear to be compatable with running the program, Chrome, Firefox, and Edge appear to work. ***
+## How to Install
+TODO!!
 
 User roles: users looking to simulated different views of the solar system. There will be no restriction to any user as anyone is welcomed to use our simulator. 
 
