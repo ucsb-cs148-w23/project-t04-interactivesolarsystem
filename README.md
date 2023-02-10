@@ -9,8 +9,10 @@ We aim to use graphical engine which will produce simulated views of planets in 
 ## How to Deploy
 Go to this link:  
 https://team04-interactivesolarx.itch.io/team04-interactivesolarx 
+
  You will be prompted to enter a password, enter: cs148winter 
- *** NOTE: Safari does not appear to be compatable with running the program, both Chrome and Firefox appear to work. ***
+ 
+ *** NOTE: Safari does not appear to be compatable with running the program, Chrome, Firefox, and Edge appear to work. ***
 
 User roles: users looking to simulated different views of the solar system. There will be no restriction to any user as anyone is welcomed to use our simulator. 
 
