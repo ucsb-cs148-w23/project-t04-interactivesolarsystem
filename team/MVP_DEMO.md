@@ -1,7 +1,7 @@
 # MVP Demo Information
 ## Demo video link
 
-TODO
+https://www.youtube.com/watch?v=XO4sFh0rJRQ
 
 ## How to run
 
