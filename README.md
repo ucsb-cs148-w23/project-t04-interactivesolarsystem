@@ -6,7 +6,7 @@ Tech stack: Unity, itch.io platform.
 Description: 
 We aim to use graphical engine which will produce simulated views of planets in the solar system from any point in space. Our targeted users are likely to be students who are looking to learn more about the solar system or explore material beyond class level. Through this interactive experience, users would find it more interesting and easier to learn about the solar system.
 
-## How to Deploy
+## How to Use
 Go to this link:  
 https://team04-interactivesolarx.itch.io/team04-interactivesolarx 
 
