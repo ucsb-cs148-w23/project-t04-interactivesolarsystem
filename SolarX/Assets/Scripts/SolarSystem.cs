@@ -16,13 +16,13 @@ public class SolarSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+            
     }
 
     private void FixedUpdate()
     {
         Gravity();
-        
+            
     }
 
     void Gravity()
@@ -39,7 +39,7 @@ public class SolarSystem : MonoBehaviour
 
                     a.GetComponent<Rigidbody>().AddForce((b.transform.position - a.transform.position).normalized * (G * (m1 * m2) / (r * r)));
                 }
-                
+                    
             }
         }
     }
