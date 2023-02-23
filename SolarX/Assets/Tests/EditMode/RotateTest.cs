@@ -8,12 +8,23 @@ public class StubTest
 {
     // A Test behaves as an ordinary method
     [Test]
-    public void TestRotationSpeedZeroResultsInZeroRotation()
+    public void RotationSpeedZeroResultsInZeroRotation()
     {
         Vector3 actual = zizhuan.rotateHelper(Vector3.down, 0);
         Vector3 expected = Vector3.zero;
 
         Assert.AreEqual(actual, expected);
+    }
+
+    [Test]
+    public void HighRotationSpeedResultsInLargeRotationVector()
+    {
+
+        Vector3 actual = zizhuan.rotateHelper(Vector3.down, 1000);
+        Vector3 expected = new Vector3(0f, -1000f, 0f);
+
+        Assert.AreEqual(actual, expected);
+
     }
 
 }
