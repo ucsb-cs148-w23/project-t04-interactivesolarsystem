@@ -10,6 +10,18 @@ public class SolarSystem : MonoBehaviour
     void Start()
     {
         celestials = GameObject.FindGameObjectsWithTag("Celestials");
+        // Output to Log what SolarSystem is seeing, so we can figure out
+        // if there's something wrong with it
+        if (celestials == null || celestials.Length == 0) {
+
+            Debug.LogWarning("This SolarSystem found no celestial objects!", this);
+
+        }
+        else {
+
+            Debug.Log("Found " + this.celestials.Length.ToString() + " celestial objects at SolarSystem start.", this);
+
+        }
         InitialVelocity();
     }
 
