@@ -37,19 +37,19 @@ public class mouselook : MonoBehaviour
     {
         
         wasEPressed();
+        if(ePressed){
+            return;
+        }
 
+        MouseX = Input.GetAxis("Mouse X") * MouseSensitivity * Time.deltaTime;
+        MouseY = Input.GetAxis("Mouse Y") * MouseSensitivity * Time.deltaTime;
 
-        if(!ePressed){
-            MouseX = Input.GetAxis("Mouse X") * MouseSensitivity * Time.deltaTime;
-            MouseY = Input.GetAxis("Mouse Y") * MouseSensitivity * Time.deltaTime;
+        XRotation -= MouseY;
+        XRotation = Mathf.Clamp(XRotation, -90f, 90f);
 
-            XRotation -= MouseY;
-            XRotation = Mathf.Clamp(XRotation, -90f, 90f);
+        transform.localRotation =  Quaternion.Euler(XRotation, 0f, 0f);
 
-            transform.localRotation =  Quaternion.Euler(XRotation, 0f, 0f);
-
-            PlayerBody.Rotate(Vector3.up * MouseX);
-        }   
+        PlayerBody.Rotate(Vector3.up * MouseX);
     }
 
     private void wasEPressed(){
