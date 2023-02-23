@@ -8,18 +8,12 @@ public class StubTest
 {
     // A Test behaves as an ordinary method
     [Test]
-    public void StubTestSimplePasses()
+    public void TestRotationSpeedZeroResultsInZeroRotation()
     {
-        // Use the Assert class to test conditions
+        Vector3 actual = zizhuan.rotateHelper(Vector3.down, 0);
+        Vector3 expected = Vector3.zero;
+
+        Assert.AreEqual(actual, expected);
     }
 
-    // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-    // `yield return null;` to skip a frame.
-    [UnityTest]
-    public IEnumerator StubTestWithEnumeratorPasses()
-    {
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
-        yield return null;
-    }
 }

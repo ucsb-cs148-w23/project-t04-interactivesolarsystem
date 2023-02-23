@@ -23,15 +23,28 @@ public class StubTest
 
     }
 
+    public GameObject buildDummyCelestial(Vector3 in_pos, float in_mass = 1f, string in_name = "Dummy") {
+
+        GameObject dummy_celestial = new GameObject();
+        dummy_celestial.name = in_name;
+        dummy_celestial.tag = "Celestials";
+        dummy_celestial.AddComponent<Rigidbody>();
+        dummy_celestial.GetComponent<Rigidbody>().position = in_pos;
+        dummy_celestial.GetComponent<Rigidbody>().mass = in_mass;
+
+        return dummy_celestial;
+
+    }
+
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
     // `yield return null;` to skip a frame.
     [UnityTest]
-    public IEnumerator MoveDown()
+    public IEnumerator SingularPlanetDoesNotMove()
     {
         // Use the Assert class to test conditions.
         // Use yield to skip a frame.
-        //var gameObj = new GameObject();
-        //var yid = gameObj.AddComponent<YIDONG>();
+        //SolarSystem solSys = gameObj.GetComponent<SolarSystem>();
+        
 
         yield return null;
     }
