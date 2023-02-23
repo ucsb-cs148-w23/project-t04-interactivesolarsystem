@@ -6,9 +6,35 @@ public class SolarSystem : MonoBehaviour
 {
     readonly float G = 100f;
     GameObject[] celestials;
+
+    // Testable helper functions
+    public static Vector3 initialVelocityHelper(Vector3 direction, float grav_const, 
+        float other_mass, float distance) {
+        // Used in initialVelocity
+        return direction * Mathf.Sqrt((grav_const * other_mass) / distance);
+
+    }
+
+    public static Vector3 gravForceHelper(Vector3 pos1, Vector3 pos2, float grav_const, float mass1, float mass2, float distance) {
+        // Provides a testable helper function for the gravity calculation
+        // Inputs: 
+        //  Vector3 pos1: position of planet that gravitational force is being applied to
+        //  Vector3 pos2: position of planet applying gravitational force
+        //  float grav_const: The gravity constant to be used
+        //  float mass1: mass of planet that gravitational force is being applied to
+        //  float mass2: mass of planet applying gravitational force
+        //  float distance: distance between planet1 and planet2
+        // Returns a Vector3 representing the gravitational force applied to planet1 by planet2.
+
+        return (pos2 - pos1).normalized * (grav_const * (mass1 * mass2) / (distance * distance));
+
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("SolarSystem starting", this);
+
         celestials = GameObject.FindGameObjectsWithTag("Celestials");
         // Output to Log what SolarSystem is seeing, so we can figure out
         // if there's something wrong with it
@@ -49,7 +75,9 @@ public class SolarSystem : MonoBehaviour
                     float m2 = b.GetComponent<Rigidbody>().mass;
                     float r = Vector3.Distance(a.transform.position, b.transform.position);
 
-                    a.GetComponent<Rigidbody>().AddForce((b.transform.position - a.transform.position).normalized * (G * (m1 * m2) / (r * r)));
+                    // I don't think we guard against distance being 0. We should probably fix that.
+                    //(b.transform.position - a.transform.position).normalized * (G * (m1 * m2) / (r * r))
+                    a.GetComponent<Rigidbody>().AddForce(gravForceHelper(a.transform.position, b.transform.position, G, m1, m2, r));
                 }
                 
             }
@@ -68,7 +96,8 @@ public class SolarSystem : MonoBehaviour
                     float r = Vector3.Distance(a.transform.position, b.transform.position);
                     a.transform.LookAt(b.transform);
 
-                    a.GetComponent<Rigidbody>().velocity += a.transform.right * Mathf.Sqrt((G * m2) / r);
+                    a.GetComponent<Rigidbody>().velocity += initialVelocityHelper(a.transform.right, 
+                                                                                    G, m2, r);
                 }
             }
         }
