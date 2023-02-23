@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class mouselook : MonoBehaviour
 {
-    //sensitivity => ÁéÃô¶È
+    //sensitivity => ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public float MouseSensitivity = 100f;
 
     public Transform PlayerBody;
@@ -17,6 +17,9 @@ public class mouselook : MonoBehaviour
     float MouseX;
     float MouseY;
 
+    //For checking if the "escape" mode is on
+    private bool ePressed;
+
 
     // Start is called before the first frame update
     void Awake()
@@ -24,25 +27,37 @@ public class mouselook : MonoBehaviour
         localspace = gameObject.transform.rotation;
         MouseX = localspace.x;
         MouseY = localspace.y;
-   
-        
+
+        ePressed = false;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-    
-      
-        MouseX = Input.GetAxis("Mouse X") * MouseSensitivity * Time.deltaTime;
-         MouseY = Input.GetAxis("Mouse Y") * MouseSensitivity * Time.deltaTime;
+        
+        wasEPressed();
 
-        XRotation -= MouseY;
-        XRotation = Mathf.Clamp(XRotation, -90f, 90f);
 
-        transform.localRotation =  Quaternion.Euler(XRotation, 0f, 0f);
+        if(!ePressed){
+            MouseX = Input.GetAxis("Mouse X") * MouseSensitivity * Time.deltaTime;
+            MouseY = Input.GetAxis("Mouse Y") * MouseSensitivity * Time.deltaTime;
 
-        PlayerBody.Rotate(Vector3.up * MouseX);
+            XRotation -= MouseY;
+            XRotation = Mathf.Clamp(XRotation, -90f, 90f);
 
+            transform.localRotation =  Quaternion.Euler(XRotation, 0f, 0f);
+
+            PlayerBody.Rotate(Vector3.up * MouseX);
+        }   
+    }
+
+    private void wasEPressed(){
+        if(Input.GetKeyDown(KeyCode.E)){
+            ePressed = !ePressed;
+            //Debug.Log("E key was pressed, now value is" + ePressed);
+        }
     }
 }
+
 
