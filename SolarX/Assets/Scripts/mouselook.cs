@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class mouselook : MonoBehaviour
 {
-    //sensitivity => ÁéÃô¶È
+    //sensitivity => ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public float MouseSensitivity = 100f;
 
     public Transform PlayerBody;
@@ -31,8 +31,10 @@ public class mouselook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    
-      
+        if(DisconnectCam.instance.getDisconnected()){
+            return;
+        }
+        
         MouseX = Input.GetAxis("Mouse X") * MouseSensitivity * Time.deltaTime;
          MouseY = Input.GetAxis("Mouse Y") * MouseSensitivity * Time.deltaTime;
 
