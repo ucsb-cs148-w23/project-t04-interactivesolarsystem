@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class zizhuan : MonoBehaviour
+public class SelfRotation : MonoBehaviour
 {
     public float _RotationSpeed; //定义自转的速度
     // Start is called before the first frame update
