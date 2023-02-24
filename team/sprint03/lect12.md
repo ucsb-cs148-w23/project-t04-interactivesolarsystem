@@ -6,14 +6,13 @@ Meeting Time: lect12 02/21 16:00-16:45
 
 Type of meeting: daily scrum
 
-Team: Mason Ma []
+Team: Mason Ma [x]
 Dingfan Zheng[x]
 Ethan Meade [x]
 Richard Yang [x]
 Elizabeth Armstrong [x]
 Aashay Parab [x]
 
-Mason is sick but available on slack.
 
 ## Stand up Meeting:
 
@@ -26,6 +25,6 @@ Ethan: Has worked on testing and done some experimenting, will work on pausing.
 
 Aashay: Haven't done much this weekend but will work on fixing mouse movement and start screen text. no roadblocks
 
-Mason: 
+Mason: work on the issue 
 
 Richard: Added placeholder documents for unit tests.
