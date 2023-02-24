@@ -17,13 +17,13 @@ Two members were not present, but available on Slack.
 
 ## Stand up Meeting:
 
-Elizabeth: Working on issue: Create a HotKey for freezing the camera.
+Elizabeth: Make a PR for building purpose on Itch.io. Working on issue: Create a HotKey for freezing the camera.
 
 Dingfan: Working on issue: Add in a pause and resume button to the simulation
 
-Ethan: Working on the testing stuff and done some experimenting.
+Ethan: Working on the integration testing and done some experimenting.
 
-Aashay: Change font size of the start page and about page texts.
+Aashay: Fix font size of the start page and about page texts. Will work on the mouse behavior.
 
 Mason & Richard: Working on issue that Sun will be more star-like.
 
