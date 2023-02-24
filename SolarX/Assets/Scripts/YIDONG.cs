@@ -16,6 +16,11 @@ public class YIDONG : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Check to see if camera is locked!
+        if(mouselook.instance.getDisconnectCam()){
+            return;
+        }
+
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
 

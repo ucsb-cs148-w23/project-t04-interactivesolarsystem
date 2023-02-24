@@ -71,6 +71,10 @@ public class mouselook : MonoBehaviour
         disconnectCam = eVal;
         canReconnect = !eVal;
     }
+
+    public bool getDisconnectCam(){
+        return disconnectCam;
+    }
 }
 
 
