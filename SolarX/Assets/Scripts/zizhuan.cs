@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class zizhuan : MonoBehaviour
 {
-    public float _RotationSpeed; //¶¨Òå×Ô×ªµÄËÙ¶È
+    public float _RotationSpeed; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ù¶ï¿½
     // Start is called before the first frame update
     void Start()
     {
