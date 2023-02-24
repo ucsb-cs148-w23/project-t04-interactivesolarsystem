@@ -18,7 +18,11 @@ public class mouselook : MonoBehaviour
     float MouseY;
 
     //For checking if the "escape" mode is on
-    private bool ePressed;
+    private bool disconnectCam;
+    private bool canReconnect;
+
+    //For allowing functions in this class to be used in other programs
+    public static mouselook instance;
 
 
     // Start is called before the first frame update
@@ -28,7 +32,10 @@ public class mouselook : MonoBehaviour
         MouseX = localspace.x;
         MouseY = localspace.y;
 
-        ePressed = false;
+        disconnectCam = false;
+        canReconnect = true;
+
+        instance = this;
 
     }
 
@@ -37,7 +44,7 @@ public class mouselook : MonoBehaviour
     {
         
         wasEPressed();
-        if(ePressed){
+        if(disconnectCam){
             return;
         }
 
@@ -53,10 +60,16 @@ public class mouselook : MonoBehaviour
     }
 
     private void wasEPressed(){
-        if(Input.GetKeyDown(KeyCode.E)){
-            ePressed = !ePressed;
+        if(Input.GetKeyDown(KeyCode.E) && canReconnect){
+            disconnectCam = !disconnectCam;
             //Debug.Log("E key was pressed, now value is" + ePressed);
         }
+    }
+
+    //To change the disconnectCam state to given state
+    public void setEPressed(bool eVal){
+        disconnectCam = eVal;
+        canReconnect = !eVal;
     }
 }
 

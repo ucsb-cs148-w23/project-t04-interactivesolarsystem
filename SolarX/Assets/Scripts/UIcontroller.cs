@@ -25,6 +25,9 @@ public class UIcontroller : MonoBehaviour
     {
         sawTheObject.SetActive(true);
         talkAbout.text = _text;
+
+        //Make screen not respond to mouse
+        mouselook.instance.setEPressed(true);
     }
     // Update is called once per frame
     void Update()
