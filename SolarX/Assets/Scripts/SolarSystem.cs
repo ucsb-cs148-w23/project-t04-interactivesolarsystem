@@ -32,7 +32,8 @@ public class SolarSystem : MonoBehaviour
 
         //Debug logs for testing, but we don't want them active all the time... figure out a way to toggle them.
         //Debug.Log(((pos2 - pos1).normalized * (grav_const * (mass1 * mass2) / (distance * distance))).ToString());
-        Debug.Log(((pos2 - pos1).normalized).ToString());
+        //Debug.Log("Position1: " + pos1.ToString() + ", Position2: " + pos2.ToString());
+        //Debug.Log("Normalized distance:" + ((pos2 - pos1).normalized).ToString());
         return (pos2 - pos1).normalized * (grav_const * (mass1 * mass2) / (distance * distance));
 
     }

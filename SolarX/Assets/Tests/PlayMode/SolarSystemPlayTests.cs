@@ -4,7 +4,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class StubTest
+public class SolarSystemPlayTests
 {
 
     private GameObject gameObj;
@@ -33,6 +33,10 @@ public class StubTest
         dummy_celestial.GetComponent<Rigidbody>().useGravity = false;
         dummy_celestial.GetComponent<Rigidbody>().position = in_pos;
         dummy_celestial.GetComponent<Rigidbody>().mass = in_mass;
+        //dummy_celesital.GetComponent<Rigidbody>().AddComponent<SphereCollider>();
+        //dummy_celestial.GetComponent<Rigidbody>().GetComponent<SphereCollider>().radius = 1f;
+    
+
 
         return dummy_celestial;
 
@@ -68,7 +72,7 @@ public class StubTest
         // Use yield to skip a frame.
         SolarSystem solSys = gameObj.GetComponent<SolarSystem>() as SolarSystem;
         var planet1 = buildDummyCelestial(Vector3.zero, 0f, "Planet1");
-        Vector3 planet2_pos = new Vector3(1f, 0f, 0f);
+        Vector3 planet2_pos = new Vector3(5f, 0f, 0f);
         var planet2 = buildDummyCelestial(planet2_pos, 0f, "Planet2");
 
         GameObject[] dummy_celestials = {planet1, planet2};
@@ -111,7 +115,7 @@ public class StubTest
         solSys.celestials = dummy_celestials;
 
         // For some reason, AddForce HATES it when two planets of zero mass attract each other for too long.
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.2f);
 
         float final_distance = Vector3.Distance(planet1.GetComponent<Rigidbody>().position, planet2.GetComponent<Rigidbody>().position);
 
