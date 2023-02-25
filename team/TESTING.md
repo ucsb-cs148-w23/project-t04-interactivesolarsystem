@@ -18,8 +18,6 @@ Component Testing was done using Unity's own built-in testing framework, the sam
 
 Right now, the Component / Integration Testing focuses only on SolarSystem.cs and the Planets it governs. Three tests were made; for each test, one or two dummy planets were made with specific parameters that we expected to cause a certain behavior. Once everything is initialized, the Unity Test Framework runs the test as if it was an active Unity game for a specific period of time. Afterwards, we check if the planets in the solar system behaved as expected (did they move? Are they closer together?). If they did, the component test passes. Otherwise, the component test fails.
 
-Of the three component tests for SolarSystem.cs, they pass (under current settings, one or more show some issues if ran for a prolonged time).
-
 
 ## Future Plans Regarding Higher-Level Tests
 We plan to write some component / integration tests for some of the other scripts / behaviors, like the recently added pause functionality. We are uncertain if we want to add End-to-End testing for our project; if we chose to do so, more research and experimentation would be needed to see how this could be accomplished in Unity.
