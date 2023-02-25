@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class SelfRotation : MonoBehaviour
 {
-    public float _RotationSpeed; //¶¨Òå×Ô×ªµÄËÙ¶È
+    public static Vector3 rotateHelper(Vector3 vector_in, float rotationSpeed)
+    {
+        // Pulled this out so it can be unit tested for the sake of the requirements
+        return vector_in * rotationSpeed;
+
+    }
+
+    public float _RotationSpeed; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ù¶ï¿½
     // Start is called before the first frame update
     void Start()
     {

@@ -16,6 +16,11 @@ public class MoveInSpace : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if(DisconnectCam.instance.getDisconnected()){
+            return;
+        }
+
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
 
