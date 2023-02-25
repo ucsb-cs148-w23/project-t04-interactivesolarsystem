@@ -10,7 +10,7 @@ public class StubTest
     [Test]
     public void RotationSpeedZeroResultsInZeroRotation()
     {
-        Vector3 actual = zizhuan.rotateHelper(Vector3.down, 0);
+        Vector3 actual = SelfRotation.rotateHelper(Vector3.down, 0);
         Vector3 expected = Vector3.zero;
 
         Assert.AreEqual(actual, expected);
@@ -20,7 +20,7 @@ public class StubTest
     public void HighRotationSpeedResultsInLargeRotationVector()
     {
 
-        Vector3 actual = zizhuan.rotateHelper(Vector3.down, 1000);
+        Vector3 actual = SelfRotation.rotateHelper(Vector3.down, 1000);
         Vector3 expected = new Vector3(0f, -1000f, 0f);
 
         Assert.AreEqual(actual, expected);
