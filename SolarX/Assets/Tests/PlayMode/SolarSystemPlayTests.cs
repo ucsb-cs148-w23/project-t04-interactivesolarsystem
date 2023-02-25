@@ -74,7 +74,7 @@ public class SolarSystemPlayTests
         // Use the Assert class to test conditions.
         // Use yield to skip a frame.
         SolarSystem solSys = gameObj.GetComponent<SolarSystem>() as SolarSystem;
-        var planet1 = buildDummyCelestial(new Vector3(0f,0f,0f), 0f, "Planet1");
+        var planet1 = buildDummyCelestial(Vector3.zero, 0f, "Planet1");
         Vector3 planet2_pos = new Vector3(5f, 0f, 0f);
         var planet2 = buildDummyCelestial(planet2_pos, 0f, "Planet2");
 
@@ -86,7 +86,7 @@ public class SolarSystemPlayTests
         solSys.celestials = dummy_celestials;
 
         // For some reason, AddForce HATES it when two planets of zero mass attract each other for too long.
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.5f);
 
         float final_distance = Vector3.Distance(planet1.GetComponent<Rigidbody>().position, planet2.GetComponent<Rigidbody>().position);
 
