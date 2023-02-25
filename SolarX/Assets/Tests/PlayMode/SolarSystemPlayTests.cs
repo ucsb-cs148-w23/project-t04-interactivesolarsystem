@@ -29,7 +29,10 @@ public class SolarSystemPlayTests
         GameObject dummy_celestial = new GameObject();
         dummy_celestial.name = in_name;
         dummy_celestial.tag = "Celestials";
+        dummy_celestial.transform.position = in_pos;
         dummy_celestial.AddComponent<Rigidbody>();
+        dummy_celestial.AddComponent<SphereCollider>();
+        dummy_celestial.GetComponent<SphereCollider>().radius = 1f;
         dummy_celestial.GetComponent<Rigidbody>().useGravity = false;
         dummy_celestial.GetComponent<Rigidbody>().position = in_pos;
         dummy_celestial.GetComponent<Rigidbody>().mass = in_mass;
@@ -83,12 +86,12 @@ public class SolarSystemPlayTests
         solSys.celestials = dummy_celestials;
 
         // For some reason, AddForce HATES it when two planets of zero mass attract each other for too long.
-        yield return null;
+        yield return new WaitForSeconds(0.5f);
 
         float final_distance = Vector3.Distance(planet1.GetComponent<Rigidbody>().position, planet2.GetComponent<Rigidbody>().position);
 
-        Assert.AreEqual(Vector3.zero, solSys.celestials[0].GetComponent<Rigidbody>().position);
-        Assert.AreEqual(planet2_pos, solSys.celestials[1].GetComponent<Rigidbody>().position);
+        Assert.IsTrue(Vector3.zero == solSys.celestials[0].transform.position);
+        Assert.AreEqual(planet2_pos, solSys.celestials[1].transform.position);
         Assert.AreEqual(init_distance, final_distance);
 
         // Cleanup
@@ -115,7 +118,7 @@ public class SolarSystemPlayTests
         solSys.celestials = dummy_celestials;
 
         // For some reason, AddForce HATES it when two planets of zero mass attract each other for too long.
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.5f);
 
         float final_distance = Vector3.Distance(planet1.GetComponent<Rigidbody>().position, planet2.GetComponent<Rigidbody>().position);
 
