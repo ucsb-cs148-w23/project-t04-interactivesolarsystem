@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class SolarSystem : MonoBehaviour
 {
-    readonly float G = 100f;
+    readonly static float G = 100f;
     GameObject[] celestials;
+
 
     // Testable helper functions
     public static Vector3 initialVelocityHelper(Vector3 direction, float grav_const, 
@@ -30,6 +31,15 @@ public class SolarSystem : MonoBehaviour
 
     }
 
+    public void setCelestials(GameObject[] celestials)
+    {
+        this.celestials = celestials;
+    }
+
+    public GameObject[] getCelestials(){
+        return this.celestials;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,7 +58,7 @@ public class SolarSystem : MonoBehaviour
             Debug.Log("Found " + this.celestials.Length.ToString() + " celestial objects at SolarSystem start.", this);
 
         }
-        InitialVelocity();
+        InitialVelocity(celestials);
     }
 
     // Update is called once per frame
@@ -84,7 +94,7 @@ public class SolarSystem : MonoBehaviour
         }
     }
 
-    void InitialVelocity()
+    public static void InitialVelocity(GameObject[] celestials)
     {
         foreach (GameObject a in celestials)
         {
