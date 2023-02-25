@@ -25,6 +25,9 @@ public class UIcontroller : MonoBehaviour
     {
         sawTheObject.SetActive(true);
         talkAbout.text = _text;
+
+        //freeze camera
+        DisconnectCam.instance.setDisconnected(true);
     }
     // Update is called once per frame
     void Update()

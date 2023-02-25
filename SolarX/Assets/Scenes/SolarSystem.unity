@@ -2998,6 +2998,7 @@ GameObject:
   - component: {fileID: 1665672553}
   - component: {fileID: 1665672552}
   - component: {fileID: 1665672551}
+  - component: {fileID: 1665672554}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -3053,6 +3054,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: -67.103, z: 0}
+--- !u!114 &1665672554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665672550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e15003832d7b4cd58e33c6005acbe6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1684425474 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1856687845478954, guid: ab152f61198d54532ae39108e616ff59, type: 3}
@@ -3894,6 +3907,18 @@ MonoBehaviour:
       - m_Target: {fileID: 158427270}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1665672554}
+        m_TargetAssemblyTypeName: DisconnectCam, Assembly-CSharp
+        m_MethodName: setDisconnected
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
