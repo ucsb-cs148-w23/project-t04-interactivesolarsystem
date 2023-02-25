@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class YIDONG : MonoBehaviour
+public class MoveInSpace : MonoBehaviour
 {
     public CharacterController CharacterController;
 
