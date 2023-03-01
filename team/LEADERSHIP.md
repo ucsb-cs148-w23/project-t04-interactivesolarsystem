@@ -1,4 +1,4 @@
-#Meeting Leaders Prior to MVP
+# Meeting Leaders Prior to MVP
 
 | Date      | Name               | Activity                                               |
 |-----------|--------------------|--------------------------------------------------------|
@@ -10,16 +10,19 @@
 | Fri 02/17 | Dingfan Zheng      | Second retro leader                                    |    
 
 
-#Leadership Roles
-| Role | Name | 
-| Product Owner | Elizabeth Armstrong |
+# Leadership Roles
 
-|
-|
-|
-|
-|
-|
-|
+| Role                            | Name                         | 
+|---------------------------------|------------------------------|
+| Product Owner                   | Elizabeth Armstrong          |
+| Scrum Master                    | Ethan Meade                  |
+| Testing QA Coordinator          | Mason Ma                     | 
+| Retro 3 Leader                  | Aashay Parab                 | 
+| UX Coordinator                  | Dingfan Zheng                | 
+| Design Document Coordinator     | Aashay Parab                 | 
+| Deployment Document Coordinator | Richard Yang                 |
+| User Manual Coordinator         |  Dingfan Zheng               | 
+| Final Presentation Leader       | Elizabeth Armstrong          | 
+
 
 
