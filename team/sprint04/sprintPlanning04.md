@@ -11,3 +11,10 @@
 
 ## Notes 
 
+- Figure out which user stories need to be split into Sprint 04 and Sprint 05 
+- Sprint 04 will run from 02/28 to 03/09 
+- Sprint 05 will run from 03/10 to 03/17 
+- User stories we want in the final product: 
+  -  Accurate representation of planetary orbits and rotations 
+  -  User can change planet masses 
+ 
