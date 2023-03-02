@@ -4,7 +4,7 @@
 
 Mentor: Justin, Matt
 
-Meeting Time: lect12 02/21 16:00-16:45
+Meeting Time: lect15 03/02 16:00-16:15
 
 Type of meeting: daily scrum
 
