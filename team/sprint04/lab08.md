@@ -17,14 +17,14 @@
 
  ## Stand up Meeting:
 
- Elizabeth: 
+ Elizabeth: Updated kanban board for second part of spring planning.
 
- Dingfan: 
+ Dingfan: Updated kanban board for second part of spring planning and continued working on issue.
 
- Ethan: 
+ Ethan: Talked to Mateo about build-in smart merger.
 
- Aashay: 
+ Aashay: Continued working on issue.
 
- Mason:
+ Mason: Created and assigned new issue for escape pop up button.
 
- Richard: 
+ Richard: Created architecture diagram.
