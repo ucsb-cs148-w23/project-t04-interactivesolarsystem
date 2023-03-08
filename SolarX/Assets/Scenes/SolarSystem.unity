@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.043411914, g: 0.044258617, b: 0.05935309, a: 1}
+  m_IndirectSpecularColor: {r: 0.043663032, g: 0.04482539, b: 0.059559315, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1248,7 +1248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a440390a78e0734ab1ab4bb5eaf6382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RotationSpeed: 0.2
+  _RotationSpeed: 6.3586
 --- !u!1 &945280118
 GameObject:
   m_ObjectHideFlags: 0
@@ -1887,7 +1887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a440390a78e0734ab1ab4bb5eaf6382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RotationSpeed: 0.2
+  _RotationSpeed: -0.02609
 --- !u!1 &1053291265
 GameObject:
   m_ObjectHideFlags: 0
@@ -2333,7 +2333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a440390a78e0734ab1ab4bb5eaf6382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RotationSpeed: 0.2
+  _RotationSpeed: 9.446
 --- !u!1001 &1200879363
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2726,7 +2726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a440390a78e0734ab1ab4bb5eaf6382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RotationSpeed: 0.2
+  _RotationSpeed: 6.1808
 --- !u!1 &1438462351 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1526814149960808, guid: 7e4bfb3c6ba1d4bc4ba31d585abdae0f, type: 3}
@@ -2879,7 +2879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a440390a78e0734ab1ab4bb5eaf6382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RotationSpeed: 0.2
+  _RotationSpeed: 15.334
 --- !u!1001 &1442287088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3450,7 +3450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a440390a78e0734ab1ab4bb5eaf6382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RotationSpeed: 0.2
+  _RotationSpeed: 0.1081
 --- !u!1 &1764713878 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1066320961419670, guid: ec1861462fc1b46f1a1c1c3c0f1f7f15, type: 3}
@@ -3811,7 +3811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a440390a78e0734ab1ab4bb5eaf6382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RotationSpeed: 0.2
+  _RotationSpeed: 14.282
 --- !u!1001 &1956423911
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4048,7 +4048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a440390a78e0734ab1ab4bb5eaf6382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RotationSpeed: 0.2
+  _RotationSpeed: -8.828
 --- !u!1 &2137645982
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,10 @@ public class SolarSystem : MonoBehaviour
     // as 57.6 seconds of real life time. 
 
     // NASA Fact Sheet says there's 365.2 Earth Days in a full rotation
-    // 8764.8 hours in the Earth year (full rotation)
+    // 8766.144 hours in the Earth year (full rotation using sidereal measurement)
+
+    // Approximate Real-life time it takes for Earth to make a full orbit in the simulation using
+    // default settings
     //readonly static float default_earth_year = 57.6f;
 
     readonly static float G = 100f;
