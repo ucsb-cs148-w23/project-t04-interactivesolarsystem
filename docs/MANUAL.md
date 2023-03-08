@@ -1,4 +1,4 @@
-Welcome to the interactive solar system user manual. Our targeted users for this product are students, teachers, or anyone who are looking to learn more and interested in exploring the solar system. We believe that through this interactive experience, users will have a more complete understanding on how the solar system works.
+Welcome to the interactive solar system user manual. This is an online application of a interactive solar system where users can explore and learn more about the solar system. Our targeted users for this product are students, teachers, or anyone who are looking to learn more and interested in exploring the solar system. We believe that through this interactive experience, users will have a more complete understanding on how the solar system works.
 
 Getting Started:
 To use the interactive solar system, you will need to have a web browser installed on your computer. The product is accessible through itch.io, and you can access it by following the link provided.
