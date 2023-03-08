@@ -25,8 +25,15 @@ public class MoveInSpace : MonoBehaviour
         float y = Input.GetAxis("Vertical");
 
         Vector3 MoveDir = transform.right * x + transform.forward * y;
-
-        CharacterController.Move(MoveDir * Speed * Time.deltaTime);
+        //if shift key is pressed, move twice the speed
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            CharacterController.Move(MoveDir * Speed * 2 * Time.deltaTime);
+        }
+        else
+        {
+            CharacterController.Move(MoveDir * Speed * Time.deltaTime);
+        }
         if (Input .GetKey (KeyCode.Space))
         {
             gameObject.transform.position= new Vector3(gameObject .transform .position .x ,gameObject .transform .position .y + Speed * Time.deltaTime, gameObject .transform .position .z );
