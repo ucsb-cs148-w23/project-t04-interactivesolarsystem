@@ -7,9 +7,23 @@ using UnityEngine;
 
 public class SolarSystem : MonoBehaviour
 {
+    // On default settings it seems to take 57.5778 to 57.61898 seconds for Earth to do one full rotation
+    // Minimum I was able to capture during a short testing section was distance 1.701292 units from 
+    // initial position at 57.59858 seconds. We decide to represent the 'full orbital period' (i.e. one Earth year)
+    // as 57.6 seconds of real life time. 
+
+    // NASA Fact Sheet says there's 365.2 Earth Days in a full rotation
+    // 8766.144 hours in the Earth year (full rotation using sidereal measurement)
+
+    // Approximate Real-life time it takes for Earth to make a full orbit in the simulation using
+    // default settings
+    //readonly static float default_earth_year = 57.6f;
 
     readonly static float G = 100f;
     internal GameObject[] celestials;
+    public static float total_time = 0f;
+    public static Vector3 init_earth_pos;
+    GameObject Earth;
 
 
     // Testable helper functions
@@ -39,6 +53,7 @@ public class SolarSystem : MonoBehaviour
 
     }
 
+    // Maybe the mutator should be internal...
     public void setCelestials(GameObject[] celestials)
     {
         this.celestials = celestials;
@@ -52,6 +67,12 @@ public class SolarSystem : MonoBehaviour
     void Start()
     {
         Debug.Log("SolarSystem starting", this);
+
+        // for debug / frame-of-reference purposes:
+        // Earth = GameObject.Find("Earth");
+        // init_earth_pos = Earth.transform.position;
+        // Debug.Log("Earth's initial position recorded to be at: " + init_earth_pos.ToString());
+        // Debug.Log("Earth's current position on start is: " + Earth.transform.position.ToString());
 
         celestials = GameObject.FindGameObjectsWithTag("Celestials");
         // Output to Log what SolarSystem is seeing, so we can figure out
@@ -72,13 +93,25 @@ public class SolarSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        total_time += Time.deltaTime;
+
     }
 
     private void FixedUpdate()
     {
         Gravity();
-        
+        //float relative_dist = Vector3.Distance(Earth.transform.position, init_earth_pos);
+        //Debug.Log("Total Time: " + total_time.ToString());
+        //Debug.Log("==============================================");
+        //Debug.Log("Earth's Current Position: " + Earth.transform.position.ToString());
+        //Debug.Log("Earth's Initial Position: " + init_earth_pos.ToString());
+        //Debug.Log("Releative Distance: " + relative_dist.ToString());
+        // if (total_time > 1f && relative_dist < 5f) {
+
+        //     Debug.LogWarning("Earth returned to original position at approximately" + total_time.ToString() + " seconds.", this);
+        //     Debug.Log("The distance was" + relative_dist.ToString(), this);
+
+        // }
     }
 
     void Gravity()
