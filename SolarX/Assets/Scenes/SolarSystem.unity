@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.043663032, g: 0.04482539, b: 0.059559315, a: 1}
+  m_IndirectSpecularColor: {r: 0.043578748, g: 0.044726565, b: 0.059461884, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1588,8 +1588,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c2b8bad423b4504ea518b9b07c56722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseSensitivity: 100
-  PlayerBody: {fileID: 1665672553}
+  rotationDir: 2
+  acceleration: {x: 200, y: 200}
+  sensitivity: {x: 200, y: -200}
+  maxVerticalAngleFromHorizon: 90
+  inputLagPeriod: 0.005
 --- !u!1 &993468899
 GameObject:
   m_ObjectHideFlags: 0
@@ -3229,6 +3232,7 @@ GameObject:
   - component: {fileID: 1665672551}
   - component: {fileID: 1665672554}
   - component: {fileID: 1665672555}
+  - component: {fileID: 1665672556}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -3267,7 +3271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterController: {fileID: 1665672551}
-  Speed: 1000
+  Speed: 500
 --- !u!4 &1665672553
 Transform:
   m_ObjectHideFlags: 0
@@ -3308,6 +3312,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53228057a8648426b8e1ba7377aba688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1665672556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665672550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c2b8bad423b4504ea518b9b07c56722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationDir: 1
+  acceleration: {x: 200, y: 200}
+  sensitivity: {x: 200, y: -200}
+  maxVerticalAngleFromHorizon: 90
+  inputLagPeriod: 0.005
 --- !u!1 &1684425474 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1856687845478954, guid: ab152f61198d54532ae39108e616ff59, type: 3}
