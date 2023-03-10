@@ -1196,6 +1196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xinxi: {fileID: 0}
   theText: "Earth:\n\nOur home planet is the third planet from the Sun, and the only
     place we know of so far that\u2019s inhabited by living things. While Earth is
     only the fifth largest planet in the solar system, it is the only world in our
@@ -1822,6 +1823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xinxi: {fileID: 0}
   theText: "Venus:\n\nIt's a cloud-swaddled planet named for a love goddess, often
     called Earth\u2019s twin. But pull up a bit closer, and Venus turns hellish.
     Our nearest planetary neighbor, the second planet from the Sun, has a surface
@@ -2273,6 +2275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xinxi: {fileID: 0}
   theText: 'Neptune:
 
 
@@ -2605,6 +2608,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e418840cf5f5c4085aaec89683e143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  a: {fileID: 963194225}
+  b: {fileID: 1665672550}
   UI: {fileID: 1417882345}
 --- !u!4 &1225244253
 Transform:
@@ -2853,6 +2858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xinxi: {fileID: 0}
   theText: "Mars:\n\nMars is no place for the faint-hearted. It\u2019s dry, rocky,
     and bitter cold. The fourth planet from the Sun, Mars is one of Earth's two closest
     planetary neighbors (Venus is the other). Mars is one of the easiest planets
@@ -3025,7 +3031,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -861, y: 678}
+  m_AnchoredPosition: {x: -996, y: 678}
   m_SizeDelta: {x: 2699, y: 1518}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1417882347
@@ -3083,6 +3089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xinxi: {fileID: 0}
   theText: "Jupiter:\n\nJupiter is the fifth planet from our Sun and is, by far,
     the largest planet in the solar system \u2013 more than twice as massive as all
     the other planets combined. Jupiter's stripes and swirls are actually cold, windy
@@ -3861,6 +3868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xinxi: {fileID: 0}
   theText: "Mercury:\n\nThe smallest planet in our solar system and nearest to the
     Sun, Mercury is only slightly larger than Earth's Moon. From the surface of Mercury,
     the Sun would appear more than three times as large as it does when viewed from
@@ -4017,6 +4025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xinxi: {fileID: 1225244251}
   theText: "Sun:\nThe Sun is a 4.5 billion-year-old yellow dwarf star \u2013 a hot
     glowing ball of hydrogen and helium \u2013 at the center of our solar system.
     It\u2019s about 93 million miles (150 million kilometers) from Earth and it\u2019s
@@ -4220,6 +4229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xinxi: {fileID: 0}
   theText: 'Saturn:
 
 
@@ -4537,6 +4547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xinxi: {fileID: 0}
   theText: 'Uranus:
 
 
@@ -4787,6 +4798,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1225244251}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &2137645985
 MonoBehaviour:
