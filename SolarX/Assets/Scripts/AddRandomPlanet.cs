@@ -31,21 +31,21 @@ public class AddRandomPlanet : MonoBehaviour
         
     }
 
-    private void FixedUpdate()
-    {
-        // Add gravity
-        foreach (GameObject randomPlanet in randomPlanets)
-        {
-            foreach (GameObject b in celestials)
-            {
-                float m1 = randomPlanet.GetComponent<Rigidbody>().mass;
-                float m2 = b.GetComponent<Rigidbody>().mass;
-                float r = Vector3.Distance(randomPlanet.transform.position, b.transform.position);
+    //private void FixedUpdate()
+    //{
+    //    // Add gravity
+    //    foreach (GameObject randomPlanet in randomPlanets)
+    //    {
+    //        foreach (GameObject b in celestials)
+    //        {
+    //            float m1 = randomPlanet.GetComponent<Rigidbody>().mass;
+    //            float m2 = b.GetComponent<Rigidbody>().mass;
+    //            float r = Vector3.Distance(randomPlanet.transform.position, b.transform.position);
 
-                randomPlanet.GetComponent<Rigidbody>().AddForce(SolarSystem.gravForceHelper(randomPlanet.transform.position, b.transform.position, G, m1, m2, r));
-            }
-        }
-    }
+    //            randomPlanet.GetComponent<Rigidbody>().AddForce(SolarSystem.gravForceHelper(randomPlanet.transform.position, b.transform.position, G, m1, m2, r));
+    //        }
+    //    }
+    //}
 
     public void addRandomPlanet()
     {
@@ -60,18 +60,31 @@ public class AddRandomPlanet : MonoBehaviour
         randomPlanets.Add(randomPlanet);
 
 
+        
+
+        GameObject solarSystem = GameObject.Find("SolarSystem");
+        solarSystem.GetComponent<SolarSystem>().setCelestials(GameObject.FindGameObjectsWithTag("Celestials"));
+
+        celestials = solarSystem.GetComponent<SolarSystem>().getCelestials();
+        float random_mass = randomPlanet.GetComponent<Rigidbody>().mass;
         // Add initial velocity
         foreach (GameObject b in celestials)
         {
-            float m2 = b.GetComponent<Rigidbody>().mass;
-            float r = Vector3.Distance(randomPlanet.transform.position, b.transform.position);
-            randomPlanet.transform.LookAt(b.transform);
+            if (!randomPlanet.Equals(b))
+            {
+                float m2 = b.GetComponent<Rigidbody>().mass;
+                float r = Vector3.Distance(randomPlanet.transform.position, b.transform.position);
+                randomPlanet.transform.LookAt(b.transform);
+                b.transform.LookAt(randomPlanet.transform);
 
-            randomPlanet.GetComponent<Rigidbody>().velocity += SolarSystem.initialVelocityHelper(randomPlanet.transform.right,
-                                                                            G, m2, r);
+                randomPlanet.GetComponent<Rigidbody>().velocity += SolarSystem.initialVelocityHelper(randomPlanet.transform.right,
+                                                                                G, m2, r);
+                b.GetComponent<Rigidbody>().velocity += SolarSystem.initialVelocityHelper(b.transform.right,
+                                                                                G, random_mass, r);
+            }
+                
         }
 
-        
 
     }
 
