@@ -86,7 +86,7 @@ public class CelestialObjEditor : MonoBehaviour
 
     }
 
-    public static void SetPositionPolar(GameObject planet, Vector3 new_pos) {
+    public static void SetPositionPolar(GameObject planet, Vector3 new_pos_pol) {
 
         var planet_rb = planet.GetComponent<Rigidbody>();
 
@@ -97,6 +97,8 @@ public class CelestialObjEditor : MonoBehaviour
             return;
 
         }
+
+        Vector3 new_pos = polarHelper(new_pos_pol);
 
         // we're safe, go for it
         planet.transform.position = new_pos;
