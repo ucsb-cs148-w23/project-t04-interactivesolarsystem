@@ -1,4 +1,4 @@
-# Manual
+# User Manual
 
 Welcome to the interactive solar system user manual. This is an online application of a interactive solar system where users can explore and learn more about the solar system. Our targeted users for this product are students, teachers, or anyone who are looking to learn more and interested in exploring the solar system. We believe that through this interactive experience, users will have a more complete understanding on how the solar system works.
 
