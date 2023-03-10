@@ -55,6 +55,8 @@ public class AddRandomPlanet : MonoBehaviour
         Vector3 scaleVec = new Vector3(scale, scale, scale);
 
         GameObject randomPlanet = buildPlanet(pos, mass, scaleVec);
+
+        randomPlanet.AddComponent<SelfRotation>();
         randomPlanet.SetActive(true);
 
         randomPlanets.Add(randomPlanet);
