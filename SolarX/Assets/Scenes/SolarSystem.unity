@@ -1589,7 +1589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationDir: 2
-  acceleration: {x: 200, y: 200}
+  acceleration: {x: 250, y: 250}
   sensitivity: {x: 200, y: -200}
   maxVerticalAngleFromHorizon: 90
   inputLagPeriod: 0.005

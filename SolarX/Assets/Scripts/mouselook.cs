@@ -55,6 +55,10 @@ public class mouselook : MonoBehaviour{
 
     private void Update()
     {
+        //Disconnects when e key is pressed 
+        if(DisconnectCam.instance.getDisconnected()){
+            return;
+        }
         //The wanted velocity is the current input scaled by the sensitivity 
         //This is also the maximum velocity 
 
