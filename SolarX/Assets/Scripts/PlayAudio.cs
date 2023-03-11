@@ -9,6 +9,4 @@ public class PlayAudio : MonoBehaviour
     {
         UIcontroller.instance.Open(theText);
     }
-
-
 }
