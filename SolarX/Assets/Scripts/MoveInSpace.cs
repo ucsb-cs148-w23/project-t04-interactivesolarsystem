@@ -6,7 +6,7 @@ public class MoveInSpace : MonoBehaviour
 {
     public CharacterController CharacterController;
 
-    public float Speed = 10;
+    public float Speed = 500;
     // Start is called before the first frame update
     void Start()
     {
