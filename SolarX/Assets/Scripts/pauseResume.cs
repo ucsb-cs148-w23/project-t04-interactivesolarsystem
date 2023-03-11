@@ -11,19 +11,23 @@ public class pauseResume : MonoBehaviour
     public Sprite pauseButton;
     public Sprite resumeButton;
     public GameObject Sun;
+    GameObject solarSystem;
+    SolarSystem solar;
     GameObject[] celestials;
 
     public void Start()
     {
         Sun = GameObject.Find("Sun Sphere");
-        celestials = GameObject.FindGameObjectsWithTag("Celestials");
+        solarSystem = GameObject.Find("SolarSystem");
+        solar = solarSystem.GetComponent<SolarSystem>();
+        //celestials = GameObject.FindGameObjectsWithTag("Celestials");
     }
     
 
     public void ButtonClicked()
     {
         isPaused = !isPaused;
-
+        celestials = solar.getCelestials();
         if (isPaused == true)
         {
             foreach (GameObject planet in celestials)
@@ -31,7 +35,6 @@ public class pauseResume : MonoBehaviour
                 planet.GetComponent<SelfRotation>().enabled = false;
                 if (!planet.Equals(Sun))
                 {
-                    
                     planet.GetComponent<Rigidbody>().isKinematic = true;
                     planet.GetComponent<Rigidbody>().velocity = Vector3.zero;
                 }
