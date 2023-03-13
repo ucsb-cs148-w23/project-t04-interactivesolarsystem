@@ -176,7 +176,7 @@ public class CelestialObjEditor : MonoBehaviour
         // }
 
         GameObject.Destroy(planet);
-        sol.setCelestials(GameObjet.FindGameObjectsWithTag("Celestials"))
+        sol.setCelestials(GameObject.FindGameObjectsWithTag("Celestials"));
 
 
     }
