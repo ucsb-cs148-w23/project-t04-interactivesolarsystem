@@ -63,6 +63,12 @@ public class SolarSystem : MonoBehaviour
         return this.celestials;
     }
 
+    // public void updateCelestials() {
+
+    //     this.celestials = GameObject.FindGameObjectsWithTag("Celestials");
+
+    // }
+
     // Start is called before the first frame update
     void Start()
     {
