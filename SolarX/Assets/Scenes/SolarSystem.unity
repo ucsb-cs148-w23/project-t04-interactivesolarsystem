@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.043578748, g: 0.044726565, b: 0.059461884, a: 1}
+  m_IndirectSpecularColor: {r: 0.04365543, g: 0.044817843, b: 0.059549738, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -234,6 +234,7 @@ RectTransform:
   - {fileID: 158427271}
   - {fileID: 993468900}
   - {fileID: 1053291266}
+  - {fileID: 1417882346}
   - {fileID: 457691600}
   m_Father: {fileID: 0}
   m_RootOrder: 11
@@ -849,7 +850,7 @@ RectTransform:
   m_Children:
   - {fileID: 1000054219}
   m_Father: {fileID: 41845268}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1055,7 +1056,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -1343,7 +1344,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xinxi: {fileID: 0}
   theText: "Earth:\n\nOur home planet is the third planet from the Sun, and the only
     place we know of so far that\u2019s inhabited by living things. While Earth is
     only the fifth largest planet in the solar system, it is the only world in our
@@ -1375,7 +1375,7 @@ TrailRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878970856}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -2108,7 +2108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xinxi: {fileID: 0}
   theText: "Venus:\n\nIt's a cloud-swaddled planet named for a love goddess, often
     called Earth\u2019s twin. But pull up a bit closer, and Venus turns hellish.
     Our nearest planetary neighbor, the second planet from the Sun, has a surface
@@ -2153,7 +2152,7 @@ TrailRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1051049405}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -2560,7 +2559,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xinxi: {fileID: 0}
   theText: 'Neptune:
 
 
@@ -3120,6 +3118,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.47
       objectReference: {fileID: 0}
+    - target: {fileID: 23276179730521966, guid: ec1861462fc1b46f1a1c1c3c0f1f7f15, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 198053673091748918, guid: ec1861462fc1b46f1a1c1c3c0f1f7f15, type: 3}
       propertyPath: EmissionModule.enabled
       value: 0
@@ -3143,7 +3145,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xinxi: {fileID: 0}
   theText: "Mars:\n\nMars is no place for the faint-hearted. It\u2019s dry, rocky,
     and bitter cold. The fourth planet from the Sun, Mars is one of Earth's two closest
     planetary neighbors (Venus is the other). Mars is one of the easiest planets
@@ -3374,7 +3375,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xinxi: {fileID: 0}
   theText: "Jupiter:\n\nJupiter is the fifth planet from our Sun and is, by far,
     the largest planet in the solar system \u2013 more than twice as massive as all
     the other planets combined. Jupiter's stripes and swirls are actually cold, windy
@@ -4184,7 +4184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xinxi: {fileID: 0}
   theText: "Mercury:\n\nThe smallest planet in our solar system and nearest to the
     Sun, Mercury is only slightly larger than Earth's Moon. From the surface of Mercury,
     the Sun would appear more than three times as large as it does when viewed from
@@ -4341,7 +4340,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xinxi: {fileID: 1225244251}
   theText: "Sun:\nThe Sun is a 4.5 billion-year-old yellow dwarf star \u2013 a hot
     glowing ball of hydrogen and helium \u2013 at the center of our solar system.
     It\u2019s about 93 million miles (150 million kilometers) from Earth and it\u2019s
@@ -4393,6 +4391,68 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _RotationSpeed: 0.2
+--- !u!108 &1764713898
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764713878}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1.4
+  m_Range: 100000000
+  m_SpotAngle: 179
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1858415662
 GameObject:
   m_ObjectHideFlags: 0
@@ -4545,7 +4605,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xinxi: {fileID: 0}
   theText: 'Saturn:
 
 
@@ -4863,7 +4922,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xinxi: {fileID: 0}
   theText: 'Uranus:
 
 
