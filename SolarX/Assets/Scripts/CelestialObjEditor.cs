@@ -78,15 +78,22 @@ public class CelestialObjEditor : MonoBehaviour
 
     }
 
-    private Vector3 polarHelper(Vector3 polar_coords) {
+    public static Vector3 polarHelper(Vector2 polar_coords) {
         // All the elements in the vector are expected to be floats
-        // Polar-coords in 3D are: (radius, theta, phi)
+        // Polar-coords in 2D are: (radius, theta (measured in degrees here))
 
-        return Vector3.zero; // STUB
+        float radians = polar_coords[1] * UnityEngine.Mathf.Deg2Rad;
+
+        Vector3 result = Vector3.zero;
+        // result[0] is x, result[2] is z (on a 2D x-y plane, x is x and z is y).
+        result[0] = polar_coords[0] * UnityEngine.Mathf.Cos(radians);
+        result[2] = polar_coords[0] * UnityEngine.Mathf.Sin(radians);
+
+        return result;
 
     }
 
-    public static void SetPositionPolar(GameObject planet, Vector3 new_pos_pol) {
+    public static void SetPositionPolar(GameObject planet, Vector2 new_pos_pol) {
 
         var planet_rb = planet.GetComponent<Rigidbody>();
 
@@ -106,34 +113,72 @@ public class CelestialObjEditor : MonoBehaviour
 
     }
 
-    public static void SetPositionPolar(string planet_name, Vector3 new_pos) {
+    public static void SetPositionPolar(string planet_name, Vector2 new_pos_pol) {
 
-        // STUB
+        GameObject planet = GameObject.Find(planet_name);
+
+        // check that there's a planet TO modify
+        if (planet == null) {
+
+            Debug.LogError("ERROR: The planet " + planet_name + " could not be found!");
+            return;
+
+        }
+
+        // Call the other variant
+        SetPositionPolar(planet, new_pos_pol);
 
     }
 
     public static void SetRadius(GameObject planet, float new_radius) {
 
-        // STUB
+        // check that there's a planet TO modify
+        if (planet == null) {
+
+            Debug.LogError("ERROR: The planet doesn't exist!");
+            return;
+
+        }
+
+        Vector3 new_scale = new Vector3(new_radius, new_radius, new_radius);
+
+        // we're safe, go for it
+        planet.transform.localScale = new_scale;
 
     }
 
     public static void SetRadius(string planet_name, float new_radius) {
 
-        // STUB
+        GameObject planet = GameObject.Find(planet_name);
+
+        // check that there's a planet TO modify
+        if (planet == null) {
+
+            Debug.LogError("ERROR: The planet " + planet_name + " could not be found!");
+            return;
+
+        }
+
+        // Call the other variant
+        SetRadius(planet, new_radius);
 
     }
 
-    public static void DeletePlanet(GameObject planet) {
+    public static void DeletePlanet(GameObject planet, SolarSystem sol) {
         // Maybe add ability to notify the solar system it's planet is gone? Might need to do extra cleanup work too.
-        // STUB
+        // curr_celestials = sol.getCelestials();
 
-    }
+        // int count = 0;
+        // foreach (GameObject a in curr_celestials) {
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+            
+
+        // }
+
+        GameObject.Destroy(planet);
+        sol.setCelestials(GameObjet.FindGameObjectsWithTag("Celestials"))
+
+
     }
 
 }
