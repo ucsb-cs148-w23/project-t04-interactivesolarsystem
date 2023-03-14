@@ -23,9 +23,17 @@ public class MoveInSpace : MonoBehaviour
 
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
-
+        //if shift is pressed, double the movement speed
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            Speed = 1500;
+        }
+        else
+        {
+            Speed = 500;
+        }
         Vector3 MoveDir = transform.right * x + transform.forward * y;
-
+        
         CharacterController.Move(MoveDir * Speed * Time.deltaTime);
         if (Input .GetKey (KeyCode.Space))
         {
