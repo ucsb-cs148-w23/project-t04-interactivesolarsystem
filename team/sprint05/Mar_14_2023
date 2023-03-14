@@ -1,0 +1,30 @@
+# Project: Interactive Solar System
+
+Mentor: Justin, Matt
+
+Meeting Time: Zoom Meeting 03/14 15:47
+
+Type of meeting: Daily Scrum 
+
+Team: Mason Ma [x]
+Dingfan Zheng[x]
+Ethan Meade [x]
+Richard Yang [x]
+Elizabeth Armstrong [x]
+Aashay Parab [x]
+
+
+## Stand up Meeting:
+
+
+Elizabeth: Created functionality that allows for settings page in main menu to connect to objects in simulation, allowing those objects to match the user's preferences. 
+
+Dingfan: Pushed light shadow fix PR, and also added the ability to hold down shift to move faster. 
+
+Ethan: Added helper functions for adjusting planet's parameters after they've been created. Not certain what next steps should be. 
+
+Aashay: Working on mouse lock and time slider issues, not done with them quite yet. 
+
+Mason: Assigned issue to fix rotation speed, which he pushed through. Looking to work on time slider, like Aashay. 
+
+Richard: Worked on issue for ability to delete random planets. However, waiting for Elizabeth's work to go through so he can adapt his issue to the new functionality and add planet adding functionality.
