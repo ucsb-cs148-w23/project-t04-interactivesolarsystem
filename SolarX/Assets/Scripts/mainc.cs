@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class mainc : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -18,10 +19,10 @@ public class mainc : MonoBehaviour
     }
     public  void rebackmain()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
     public void rebackspace()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }

@@ -5,13 +5,14 @@ using UnityEngine;
 public class AddPlanetMain : MonoBehaviour
 {
 
-    private int planetCount;
+    private int planetCount = 0;
+    bool planetsDisabled = false;
     GameObject[] newPlanetPanels;
 
     // Start is called before the first frame update
     void Start()
     {
-        planetCount = 0;
+        
         newPlanetPanels = GameObject.FindGameObjectsWithTag("NewPlanetPanel");
         if(newPlanetPanels == null || newPlanetPanels.Length == 0){
             Debug.LogWarning("No Panels found!");
@@ -19,15 +20,19 @@ public class AddPlanetMain : MonoBehaviour
         else{
             Debug.Log("Found: "+ this.newPlanetPanels.Length.ToString() + "at start");
         }
-        for(int i = 0; i < newPlanetPanels.Length; i ++){
-            newPlanetPanels[i].SetActive(false);
-        }
+        
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(!planetsDisabled){
+            for(int i = 0; i < newPlanetPanels.Length; i ++){
+            newPlanetPanels[i].SetActive(false);
+            }
+            planetsDisabled = true;
+        }
         
     }
 

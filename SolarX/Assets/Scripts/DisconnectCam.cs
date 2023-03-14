@@ -13,6 +13,20 @@ public class DisconnectCam : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        /*
+        GameObject test = GameObject.Find("PlanetaryInformation");
+        if(test == null){
+            Debug.Log("Could not find planet Info");
+        }else{
+            PlanetaryInfo pinfo = test.GetComponent<PlanetaryInfo>();
+            if(pinfo == null){
+                Debug.Log("Could not find info component");
+            }else{
+                Debug.Log("Sun Mass: " + pinfo.getPlanetMass(0));
+            }
+            
+        }
+        */
     }
 
     // Start is called before the first frame update
