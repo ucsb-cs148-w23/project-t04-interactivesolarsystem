@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TrackingObject
   - Celestials
+  - NewPlanetPanel
   layers:
   - Default
   - TransparentFX
