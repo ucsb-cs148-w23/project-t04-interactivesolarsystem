@@ -18,8 +18,6 @@ public class AddCustumPlanets : MonoBehaviour
         Debug.Log("SolarSystem Awake");
         GameObject interPage = GameObject.Find("PlanetaryInformation");
         PlanetaryInfo planetaryInfo = interPage.GetComponent<PlanetaryInfo>();
-        planetaryInfo.setPlanetsActive(9,true);
-        planetaryInfo.setPlanetsActive(10, true);
 
         //celestials = GameObject.FindGameObjectsWithTag("Celestials");
         //Debug.Log(celestials[0].name);
