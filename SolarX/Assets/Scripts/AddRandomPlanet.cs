@@ -90,7 +90,7 @@ public class AddRandomPlanet : MonoBehaviour
 
     }
 
-    GameObject buildPlanet(Vector3 in_pos, float in_mass, Vector3 in_scale, string in_name = "Random")
+    public GameObject buildPlanet(Vector3 in_pos, float in_mass, Vector3 in_scale, string in_name = "Random")
     {
         GameObject planet = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         planet.name = in_name;

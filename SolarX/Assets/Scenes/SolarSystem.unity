@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.043578748, g: 0.044726565, b: 0.059461884, a: 1}
+  m_IndirectSpecularColor: {r: 0.043411914, g: 0.044258617, b: 0.05935309, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -234,6 +234,7 @@ RectTransform:
   - {fileID: 158427271}
   - {fileID: 993468900}
   - {fileID: 1053291266}
+  - {fileID: 1417882346}
   - {fileID: 457691600}
   m_Father: {fileID: 0}
   m_RootOrder: 11
@@ -849,7 +850,7 @@ RectTransform:
   m_Children:
   - {fileID: 1000054219}
   m_Father: {fileID: 41845268}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1279,6 +1280,7 @@ GameObject:
   - component: {fileID: 854155610}
   - component: {fileID: 854155609}
   - component: {fileID: 854155611}
+  - component: {fileID: 854155612}
   m_Layer: 0
   m_Name: SolarSystem
   m_TagString: Untagged
@@ -1326,6 +1328,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPaused: 0
+--- !u!114 &854155612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854155608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cbe6b1eaa0ceba48bd5f80a292e0694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &878970856 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1733945558841920, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
@@ -1343,7 +1357,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xinxi: {fileID: 0}
   theText: "Earth:\n\nOur home planet is the third planet from the Sun, and the only
     place we know of so far that\u2019s inhabited by living things. While Earth is
     only the fifth largest planet in the solar system, it is the only world in our
@@ -2108,7 +2121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xinxi: {fileID: 0}
   theText: "Venus:\n\nIt's a cloud-swaddled planet named for a love goddess, often
     called Earth\u2019s twin. But pull up a bit closer, and Venus turns hellish.
     Our nearest planetary neighbor, the second planet from the Sun, has a surface
@@ -2560,7 +2572,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xinxi: {fileID: 0}
   theText: 'Neptune:
 
 
@@ -3143,7 +3154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xinxi: {fileID: 0}
   theText: "Mars:\n\nMars is no place for the faint-hearted. It\u2019s dry, rocky,
     and bitter cold. The fourth planet from the Sun, Mars is one of Earth's two closest
     planetary neighbors (Venus is the other). Mars is one of the easiest planets
@@ -3374,7 +3384,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xinxi: {fileID: 0}
   theText: "Jupiter:\n\nJupiter is the fifth planet from our Sun and is, by far,
     the largest planet in the solar system \u2013 more than twice as massive as all
     the other planets combined. Jupiter's stripes and swirls are actually cold, windy
@@ -4184,7 +4193,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xinxi: {fileID: 0}
   theText: "Mercury:\n\nThe smallest planet in our solar system and nearest to the
     Sun, Mercury is only slightly larger than Earth's Moon. From the surface of Mercury,
     the Sun would appear more than three times as large as it does when viewed from
@@ -4341,7 +4349,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xinxi: {fileID: 1225244251}
   theText: "Sun:\nThe Sun is a 4.5 billion-year-old yellow dwarf star \u2013 a hot
     glowing ball of hydrogen and helium \u2013 at the center of our solar system.
     It\u2019s about 93 million miles (150 million kilometers) from Earth and it\u2019s
@@ -4545,7 +4552,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xinxi: {fileID: 0}
   theText: 'Saturn:
 
 
@@ -4863,7 +4869,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d023449505067742b59abb2df1d0646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xinxi: {fileID: 0}
   theText: 'Uranus:
 
 

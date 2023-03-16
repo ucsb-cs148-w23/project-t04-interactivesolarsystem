@@ -54,6 +54,7 @@ public class SolarSystem : MonoBehaviour
         Debug.Log("SolarSystem starting", this);
 
         celestials = GameObject.FindGameObjectsWithTag("Celestials");
+
         // Output to Log what SolarSystem is seeing, so we can figure out
         // if there's something wrong with it
         if (celestials == null || celestials.Length == 0) {
@@ -66,6 +67,12 @@ public class SolarSystem : MonoBehaviour
             Debug.Log("Found " + this.celestials.Length.ToString() + " celestial objects at SolarSystem start.", this);
 
         }
+        //celestials[0].GetComponent<Rigidbody>().mass = 1f;
+        //Debug.Log(celestials[0].name);
+        //foreach (GameObject celestial in celestials)
+        //{
+        //    celestial.GetComponent<Rigidbody>().mass = 
+        //}
         InitialVelocity(celestials);
     }
 
