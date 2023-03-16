@@ -55,6 +55,7 @@ public class mouselook : MonoBehaviour{
 
     private void Update()
     {
+        Cursor.lockState = CursorLockMode.Confined; 
         //Disconnects when e key is pressed 
         if(DisconnectCam.instance.getDisconnected()){
             return;

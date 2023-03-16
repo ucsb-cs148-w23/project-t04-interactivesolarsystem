@@ -6,16 +6,17 @@ public class MoveInSpace : MonoBehaviour
 {
     public CharacterController CharacterController;
 
-    public float Speed = 500;
+    public float Speed = 750;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Cursor.lockState = CursorLockMode.Confined; 
     }
 
     // Update is called once per frame
     void Update()
     {
+        Cursor.lockState = CursorLockMode.Confined;
 
         if(DisconnectCam.instance.getDisconnected()){
             return;
@@ -30,7 +31,7 @@ public class MoveInSpace : MonoBehaviour
         }
         else
         {
-            Speed = 500;
+            Speed = 750;
         }
         Vector3 MoveDir = transform.right * x + transform.forward * y;
         
