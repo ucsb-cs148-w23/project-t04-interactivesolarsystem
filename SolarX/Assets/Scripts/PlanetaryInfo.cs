@@ -65,9 +65,7 @@ public class PlanetaryInfo : MonoBehaviour
     
     //setters
     public void setPlanetMass(int index, float mass){
-        if(mass <= 0.1f || mass > 1000000f){
-            planetMasses[index] = mass;
-        }
+        planetMasses[index] = mass;
         
     }
 

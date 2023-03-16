@@ -38,7 +38,8 @@ public class AddPlanetMain : MonoBehaviour
 
     public void addPlanetPanel(){
         if(planetCount < newPlanetPanels.Length){
-            newPlanetPanels[planetCount].SetActive(true);
+            //newPlanetPanels[planetCount].SetActive(true);
+            addNewPlanetToPlanetaryInfo(planetCount);
             addPlanetCount();
         }else{
             Debug.Log("Already Added enough planets");
@@ -50,6 +51,21 @@ public class AddPlanetMain : MonoBehaviour
 
     public void addPlanetCount(){
         planetCount ++;
+    }
+
+    public void addNewPlanetToPlanetaryInfo(int index){
+        int adjIndex = index + 9;
+        for(int i = 0; i < newPlanetPanels.Length; i++){
+            if(newPlanetPanels[i].GetComponent<ConnectToDefault>().planetIndex == adjIndex){
+                GameObject test = GameObject.Find("PlanetaryInformation");
+                if(test != null){
+                    PlanetaryInfo plan = test.GetComponent<PlanetaryInfo>();
+                    plan.setPlanetsActive(adjIndex, true);
+                    Debug.Log("Rand planet at index: " + adjIndex + " is set to " + plan.getPlanetsActive(adjIndex));
+                }
+                newPlanetPanels[index].SetActive(true);
+            }
+        }
     }
 
     GameObject buildPanel(){

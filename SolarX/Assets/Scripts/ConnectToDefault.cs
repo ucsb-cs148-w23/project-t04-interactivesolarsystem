@@ -12,6 +12,8 @@ public class ConnectToDefault : MonoBehaviour
     private float planetMassF; //In unity units
     private float initialMassF; //in unity units
     private bool needsUpdate;
+    private PlanetaryInfo pinfo;
+    private GameObject test;
 
     //public
     public int planetIndex;
@@ -21,11 +23,19 @@ public class ConnectToDefault : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        planetMass = "1";
-        initialMass = "1";
-        planetMassF = 1f;
+        test = GameObject.Find("PlanetaryInformation");
+        if(test == null){
+            Debug.Log("Could not find planet Info");
+            planetMass = "1";
+            planetMassF = 1f;
+        }else{
+            pinfo = test.GetComponent<PlanetaryInfo>();
+            planetMassF = pinfo.getPlanetMass(planetIndex);
+            planetMass = unitToKgs(planetMassF).ToString("0.0000");
+        }
+
         initialMassF = planetMassF;
-        //initialMassF = planetMassF;
+        initialMass = planetMass;
         massInput.text = planetMass;
         AssociatedToggle.isOn = true;
         massInput.interactable = false;
@@ -35,6 +45,7 @@ public class ConnectToDefault : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log("Mass at index: "+ planetIndex + " is: " + pinfo.getPlanetMass(planetIndex));
         if(!needsUpdate){
             return;
         }
@@ -49,6 +60,9 @@ public class ConnectToDefault : MonoBehaviour
             massInput.interactable = true;
         }
         changeMass(massInput.text);
+        if(test != null){
+            pinfo.setPlanetMass(planetIndex, planetMassF);
+        }
         needsUpdate = false;
     }
 
@@ -59,7 +73,6 @@ public class ConnectToDefault : MonoBehaviour
         bool isNum = float.TryParse(str, out a);
         if(massConv <= 0.01f || massConv >= 10000000f || !isNum){
             Debug.LogWarning("Value out of Bounds");
-            //smassInput.text = planetMass;
             return;
         }
 
@@ -67,7 +80,7 @@ public class ConnectToDefault : MonoBehaviour
         planetMass = str;
         massInput.text = planetMass;
 
-        Debug.Log("planet mass in kgs: " + planetMass + ", planet mass in unity: " + planetMassF);
+
 
     }
 
@@ -102,11 +115,5 @@ public class ConnectToDefault : MonoBehaviour
     public void updateText(){
         massInput.text = planetMass;
     }
-    /*
-    public float strToFloat(string input){
-        float num = 20f;
-        return num;
-    }
-
-    */
+   
 }
