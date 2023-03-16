@@ -31,7 +31,7 @@ public class AddCustumPlanets : MonoBehaviour
 
         for (int i = 9; i < 14; i++)
         {
-            Vector3 pos = new Vector3(0f, 0f, Random.Range(1600f, 2400f));
+            Vector3 pos = new Vector3(0f, 0f, Random.Range(1600f, 8500f));
             float scale = Random.Range(30, 70);
             Vector3 scaleVec = new Vector3(scale, scale, scale);
             float mass = planetaryInfo.getPlanetMass(i);

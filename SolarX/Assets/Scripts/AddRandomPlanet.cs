@@ -49,7 +49,7 @@ public class AddRandomPlanet : MonoBehaviour
 
     public void addRandomPlanet()
     {
-        Vector3 pos = new Vector3(0f, 0f, Random.Range(1600f, 2400f));
+        Vector3 pos = new Vector3(0f, 0f, Random.Range(50f, 13000f));
         float mass = Random.Range(1, 100);
         float scale = Random.Range(30, 70);
         Vector3 scaleVec = new Vector3(scale, scale, scale);
