@@ -1477,7 +1477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a440390a78e0734ab1ab4bb5eaf6382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RotationSpeed: 1
+  _RotationSpeed: 0.2
 --- !u!1 &945280118
 GameObject:
   m_ObjectHideFlags: 0
@@ -2254,7 +2254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a440390a78e0734ab1ab4bb5eaf6382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RotationSpeed: 0.0041
+  _RotationSpeed: 0.00082
 --- !u!1 &1053291265
 GameObject:
   m_ObjectHideFlags: 0
@@ -2700,7 +2700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a440390a78e0734ab1ab4bb5eaf6382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RotationSpeed: 0.66
+  _RotationSpeed: 0.132
 --- !u!1001 &1200879363
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3278,7 +3278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a440390a78e0734ab1ab4bb5eaf6382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RotationSpeed: 1
+  _RotationSpeed: 0.2
 --- !u!1 &1417882345
 GameObject:
   m_ObjectHideFlags: 0
@@ -3510,7 +3510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a440390a78e0734ab1ab4bb5eaf6382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RotationSpeed: 0.4
+  _RotationSpeed: 0.08
 --- !u!1001 &1442287088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4322,7 +4322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a440390a78e0734ab1ab4bb5eaf6382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RotationSpeed: 0.017
+  _RotationSpeed: 0.0034
 --- !u!1 &1764713878 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1066320961419670, guid: ec1861462fc1b46f1a1c1c3c0f1f7f15, type: 3}
@@ -4745,7 +4745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a440390a78e0734ab1ab4bb5eaf6382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RotationSpeed: 0.44
+  _RotationSpeed: 0.088
 --- !u!1 &1895354256
 GameObject:
   m_ObjectHideFlags: 0
@@ -5064,7 +5064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a440390a78e0734ab1ab4bb5eaf6382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RotationSpeed: 0.7
+  _RotationSpeed: 0.14
 --- !u!1 &2137645982
 GameObject:
   m_ObjectHideFlags: 0
