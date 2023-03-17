@@ -11,6 +11,7 @@ public class SelfRotation : MonoBehaviour
 
     }
 
+
     public float _RotationSpeed; //������ת���ٶ�
     // Start is called before the first frame update
     void Start()
