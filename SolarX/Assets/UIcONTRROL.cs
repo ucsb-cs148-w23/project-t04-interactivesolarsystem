@@ -18,7 +18,10 @@ public class UIcONTRROL : MonoBehaviour
         a.GetComponent<mouselook>().enabled = true;
         b.GetComponent<MoveInSpace>().enabled = true;
     }
-
+   public void BackAbt()
+   {
+    
+   }
    public void BackMen()
    {
         SceneManager.LoadScene("main");
