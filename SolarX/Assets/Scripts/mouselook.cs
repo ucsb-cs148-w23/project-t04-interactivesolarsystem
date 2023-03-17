@@ -55,9 +55,10 @@ public class mouselook : MonoBehaviour{
 
     private void Update()
     {
-        Cursor.lockState = CursorLockMode.Confined; 
+        Cursor.lockState = CursorLockMode.Locked; 
         //Disconnects when e key is pressed 
         if(DisconnectCam.instance.getDisconnected()){
+            Cursor.lockState = CursorLockMode.None;
             return;
         }
         //The wanted velocity is the current input scaled by the sensitivity 
