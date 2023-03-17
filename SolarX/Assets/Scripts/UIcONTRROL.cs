@@ -18,9 +18,11 @@ public class UIcONTRROL : MonoBehaviour
 
    public void BackGame()
    {
+        
         UI.SetActive(false);
         a.GetComponent<mouselook>().enabled = true;
         b.GetComponent<MoveInSpace>().enabled = true;
+        cam.GetComponent<DisconnectCam>().setDisconnected(false);
     }
 
    public void BackMen()
