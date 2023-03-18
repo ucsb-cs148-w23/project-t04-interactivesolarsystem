@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class AddPlanetMain : MonoBehaviour
 {
+    
+
 
     private int planetCount = 0;
     bool planetsDisabled = false;
     GameObject[] newPlanetPanels;
+    
+    GameObject test;
+    PlanetaryInfo plan;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        test = GameObject.Find("PlanetaryInformation");
+        if(test != null){
+            plan = test.GetComponent<PlanetaryInfo>();
+        }
+
         newPlanetPanels = GameObject.FindGameObjectsWithTag("NewPlanetPanel");
         if(newPlanetPanels == null || newPlanetPanels.Length == 0){
             Debug.LogWarning("No Panels found!");
@@ -30,8 +40,18 @@ public class AddPlanetMain : MonoBehaviour
         if(!planetsDisabled){
             for(int i = 0; i < newPlanetPanels.Length; i ++){
             newPlanetPanels[i].SetActive(false);
+            if(test != null){
+                int planIndex = newPlanetPanels[i].GetComponent<ConnectToDefault>().planetIndex;
+                if(plan.getPlanetsActive(planIndex)){
+                    newPlanetPanels[i].SetActive(true);
+                    addPlanetCount();
+                }
+            }
             }
             planetsDisabled = true;
+            if(planetCount == newPlanetPanels.Length){
+                gameObject.SetActive(false);
+            }
         }
         
     }
@@ -39,7 +59,7 @@ public class AddPlanetMain : MonoBehaviour
     public void addPlanetPanel(){
         if(planetCount < newPlanetPanels.Length){
             //newPlanetPanels[planetCount].SetActive(true);
-            addNewPlanetToPlanetaryInfo(planetCount);
+            addNewPlanetToPlanetaryInfo(newPlanetIndex());
             addPlanetCount();
         }else{
             Debug.Log("Already Added enough planets");
@@ -57,19 +77,43 @@ public class AddPlanetMain : MonoBehaviour
         int adjIndex = index + 9;
         for(int i = 0; i < newPlanetPanels.Length; i++){
             if(newPlanetPanels[i].GetComponent<ConnectToDefault>().planetIndex == adjIndex){
-                GameObject test = GameObject.Find("PlanetaryInformation");
                 if(test != null){
-                    PlanetaryInfo plan = test.GetComponent<PlanetaryInfo>();
                     plan.setPlanetsActive(adjIndex, true);
                     Debug.Log("Rand planet at index: " + adjIndex + " is set to " + plan.getPlanetsActive(adjIndex));
                 }
-                newPlanetPanels[index].SetActive(true);
+                newPlanetPanels[i].SetActive(true);
             }
         }
     }
 
-    GameObject buildPanel(){
-        GameObject panel = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        return panel;
+    int newPlanetIndex(){
+        int index = 0;
+        for(int i = 0; i < newPlanetPanels.Length; i ++){
+            if(test != null){
+                if(!plan.getPlanetsActive(i + 9)){
+                    return i;
+                }
+            }
+        }
+        gameObject.SetActive(false);
+        return index;
     }
+
+    public void removePlanet(int index){
+        int adjIndex = index + 9;
+        for(int i = 0; i < newPlanetPanels.Length; i++){
+            if(newPlanetPanels[i].GetComponent<ConnectToDefault>().planetIndex == adjIndex){
+                if(test != null){
+                    plan.setPlanetsActive(adjIndex, false);
+                    //Debug.Log("Rand planet at index: " + adjIndex + " is set to " + plan.getPlanetsActive(adjIndex));
+                }
+                newPlanetPanels[i].SetActive(false);
+                planetCount --;
+            }
+        }
+
+        gameObject.SetActive(true);
+
+    }
+
 }
