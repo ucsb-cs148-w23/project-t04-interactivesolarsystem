@@ -10,7 +10,7 @@ public class PlanetaryInfo : MonoBehaviour
     float[] planetPositions;
     int numPlanets = 14;
 
-    public int distSetting;
+    public int[] distSetting = {0, 0, 0, 0, 0};
 
     // Start is called before the first frame update
     void Awake()
@@ -56,7 +56,7 @@ public class PlanetaryInfo : MonoBehaviour
             planetPositions[i] = Random.Range(1080f, 1610f);
         }
 
-        distSetting = 0;
+        //distSetting = new {0,0,0,0,0};
 
     }
 
