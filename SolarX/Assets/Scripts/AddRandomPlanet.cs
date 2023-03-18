@@ -68,6 +68,8 @@ public class AddRandomPlanet : MonoBehaviour
         {
             if (!randomPlanet.Equals(b))
             {
+                Vector3 b_rotation = new Vector3(b.transform.eulerAngles.x, b.transform.eulerAngles.y, b.transform.eulerAngles.z);
+
                 float m2 = b.GetComponent<Rigidbody>().mass;
                 float r = Vector3.Distance(randomPlanet.transform.position, b.transform.position);
                 randomPlanet.transform.LookAt(b.transform);
@@ -77,6 +79,8 @@ public class AddRandomPlanet : MonoBehaviour
                                                                                 G, m2, r);
                 b.GetComponent<Rigidbody>().velocity += SolarSystem.initialVelocityHelper(b.transform.right,
                                                                                 G, random_mass, r);
+
+                b.transform.eulerAngles = b_rotation;
             }
                 
         }
