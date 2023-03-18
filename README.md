@@ -16,6 +16,9 @@ Then to upload to itch.io, you first need to create an account or gain access to
 ### User roles: 
 Users looking to simulated different views of the solar system. There will be no restriction to any user as anyone is welcomed to use our simulator. 
 
+# Deployment 
+Link to deployment: https://team04-interactivesolarx.itch.io/team04-interactivesolarx
+
 ##
 |Name | Github username |
 | ---- | --------------- |
