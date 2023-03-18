@@ -928,10 +928,10 @@ RectTransform:
   m_Father: {fileID: 41845268}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1247.8, y: 506.6028}
-  m_SizeDelta: {x: 167.96, y: 38.7171}
+  m_AnchorMin: {x: 1, y: 0.72568244}
+  m_AnchorMax: {x: 1, y: 0.72568244}
+  m_AnchoredPosition: {x: -101.19995, y: 164.10281}
+  m_SizeDelta: {x: 167.95996, y: 39.717102}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &457691601
 MonoBehaviour:
@@ -2029,7 +2029,7 @@ GameObject:
   - component: {fileID: 993468902}
   - component: {fileID: 993468901}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: BackButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
