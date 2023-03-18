@@ -22,7 +22,15 @@ public class pauseResume : MonoBehaviour
         solar = solarSystem.GetComponent<SolarSystem>();
         //celestials = GameObject.FindGameObjectsWithTag("Celestials");
     }
-    
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ButtonClicked();
+        }
+    }
+
 
     public void ButtonClicked()
     {
