@@ -23,8 +23,13 @@ public class UIcontroller : MonoBehaviour
     }
     public void Open(string _text)
     {
+        //Font newFont = new Font("Roboto");
         sawTheObject.SetActive(true);
         talkAbout.text = _text;
+
+        talkAbout.color = new Color32(247, 141, 79, 255); 
+        talkAbout.fontSize = 32; 
+        talkAbout.alignment = TextAlignmentOptions.Center; 
 
         //freeze camera
         DisconnectCam.instance.setDisconnected(true);
