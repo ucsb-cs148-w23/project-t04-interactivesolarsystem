@@ -24,8 +24,10 @@ public class NewPlanetDistance : MonoBehaviour
         planetInfoObject = GameObject.Find("PlanetaryInformation");
         if(planetInfoObject != null){
             pInfo = planetInfoObject.GetComponent<PlanetaryInfo>();
-            
+            menu.value = pInfo.distSetting;
         }
+
+        
 
     }
 
@@ -42,6 +44,7 @@ public class NewPlanetDistance : MonoBehaviour
     public void updatePlanetInfo(){
         float planetPos = planetPositions[menu.value];
         pInfo.setPlanetPosition(planetIndex-9, planetPos);
+        pInfo.distSetting = menu.value;
         Debug.Log(planetPos);
     }
 
