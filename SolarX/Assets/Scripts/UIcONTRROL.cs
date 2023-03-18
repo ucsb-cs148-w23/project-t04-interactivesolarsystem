@@ -15,10 +15,9 @@ public class UIcONTRROL : MonoBehaviour
     public GameObject cam;
 
 
-
-    public void BackGame()
-    {
-
+   public void BackGame()
+   {
+        isOpen = !isOpen;
         UI.SetActive(false);
         a.GetComponent<mouselook>().enabled = true;
         b.GetComponent<MoveInSpace>().enabled = true;
@@ -37,9 +36,10 @@ public class UIcONTRROL : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            if (isOpen == false)
-            {
-                cam.GetComponent<DisconnectCam>().setDisconnected(true);
+            
+            if (isOpen==false)
+            {   
+                cam.GetComponent<DisconnectCam>().setDisconnected(true); 
                 a.GetComponent<mouselook>().enabled = false;
                 b.GetComponent<MoveInSpace>().enabled = false;
                 UI.SetActive(true);
@@ -53,6 +53,7 @@ public class UIcONTRROL : MonoBehaviour
                 b.GetComponent<MoveInSpace>().enabled = true;
             }
             isOpen = !isOpen;
+
         }
     }
 }
