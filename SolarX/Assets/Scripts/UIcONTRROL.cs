@@ -12,9 +12,8 @@ public class UIcONTRROL : MonoBehaviour
     public GameObject UI;
     private bool isOpen = false;
     private bool isa;
-    public GameObject cam; 
+    public GameObject cam;
 
-    
 
    public void BackGame()
    {
@@ -25,29 +24,30 @@ public class UIcONTRROL : MonoBehaviour
         cam.GetComponent<DisconnectCam>().setDisconnected(false);
     }
 
-   public void BackMen()
-   {
+    public void BackMen()
+    {
         SceneManager.LoadScene("main");
-   }
+    }
 
 
 
-   private void Update() {
+    private void Update()
+    {
 
-        if(Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             
             if (isOpen==false)
             {   
                 cam.GetComponent<DisconnectCam>().setDisconnected(true); 
                 a.GetComponent<mouselook>().enabled = false;
-                b.GetComponent<MoveInSpace>().enabled = false; 
+                b.GetComponent<MoveInSpace>().enabled = false;
                 UI.SetActive(true);
-               
+
             }
             else
             {
-                cam.GetComponent<DisconnectCam>().setDisconnected(false); 
+                cam.GetComponent<DisconnectCam>().setDisconnected(false);
                 UI.SetActive(false);
                 a.GetComponent<mouselook>().enabled = true;
                 b.GetComponent<MoveInSpace>().enabled = true;
@@ -55,5 +55,5 @@ public class UIcONTRROL : MonoBehaviour
             isOpen = !isOpen;
 
         }
-   }
+    }
 }
