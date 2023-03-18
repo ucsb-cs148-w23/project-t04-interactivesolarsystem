@@ -6,6 +6,8 @@ public class PlanetaryInfo : MonoBehaviour
 {
     float[] planetMasses;
     bool[] planetsActive;
+    //positions only for added planets
+    float[] planetPositions;
     int numPlanets = 14;
 
     // Start is called before the first frame update
@@ -20,6 +22,9 @@ public class PlanetaryInfo : MonoBehaviour
         planetMasses = new float[numPlanets];
         //If the planet is active (1 is active, 0 is inactive)(could be changed by adding or deleting)
         planetsActive = new bool[numPlanets];
+
+        //only includes new planets soooo
+        planetPositions = new float[numPlanets - 9];
 
         for(int i = 0; i < numPlanets; i ++){
             if(i < 9){
@@ -45,6 +50,9 @@ public class PlanetaryInfo : MonoBehaviour
         planetMasses[12] = Random.Range(0.3f, 20.0f); //Random 4
         planetMasses[13] = Random.Range(0.3f, 20.0f); //Random 5
 
+        for(int i =0; i < numPlanets - 9; i ++){
+            planetPositions[i] = Random.Range(1080f, 1610f);
+        }
 
     }
 
@@ -62,6 +70,10 @@ public class PlanetaryInfo : MonoBehaviour
     public float getPlanetMass(int index){
         return planetMasses[index];
     }
+
+    public float getPlanetPosition(int index){
+        return planetPositions[index];
+    }
     
     //setters
     public void setPlanetMass(int index, float mass){
@@ -71,5 +83,9 @@ public class PlanetaryInfo : MonoBehaviour
 
     public void setPlanetsActive(int index, bool active){
         planetsActive[index] = active;
+    }
+
+    public void setPlanetPosition(int index, float position){
+        planetPositions[index] = position;
     }
 }
