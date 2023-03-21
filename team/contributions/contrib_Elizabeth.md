@@ -5,3 +5,5 @@ menu and the solar system simulation where users can change the masses of planet
 for the current masses of the planets that can then pass that information through all the scenes and not get destroyed or duplicated through switching scenes.
 
 I also implemented the initial functionality 'e' key to disconnect the controls from the scene for the user to click on other buttons without moving their view.
+
+I also led some sprint planning meetings so that we could have a clear view of what we wanted the product to be and what specific steps we needed to realize what we wanted to in that sprint.
