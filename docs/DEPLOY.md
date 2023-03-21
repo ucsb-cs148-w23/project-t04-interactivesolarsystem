@@ -1,3 +1,3 @@
 # Deployment
 
-We use %itch.io platform to host our unity-based project.
+We use <a href="itch.io">itch.io<a> platform to host our unity-based project.
