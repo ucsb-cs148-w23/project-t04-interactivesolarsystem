@@ -1,6 +1,6 @@
 # Deployment
 
-This document specifies the deployment strategies applied for our Unity-based project SolarX, an interactive solar system simulator.
+This document specifies the deployment strategies for our Unity-based project SolarX, an interactive solar system simulator.
 
 ### Local Deployment:
 
