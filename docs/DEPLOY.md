@@ -4,8 +4,9 @@ This document specifies the deployment strategies for our Unity-based project So
 
 ### Local Build:
 
-Unity provides an option for building and publishing WebGL project on the local host. Having WebGL build support install
-<img src="[https://user-images.githubusercontent.com/link-to-your-image.png](https://user-images.githubusercontent.com/93735732/226769272-e15e2851-8827-4601-a3e8-98277d673f26.png)" width="200" />
+Unity provides an option for building and publishing WebGL project on the local host. Having WebGL build support install, open the WebGL build panel under Publish menu.
+![image](https://user-images.githubusercontent.com/93735732/226769561-0cc4051e-77fe-40a2-abb9-d70f6385df9f.png)
+
 
 
 We use <a href="itch.io">itch.io<a> platform to host our unity-based project.
