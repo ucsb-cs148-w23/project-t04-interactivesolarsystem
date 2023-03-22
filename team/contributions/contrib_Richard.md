@@ -9,3 +9,5 @@ My contributions to this project were the following:
 4. Another post-MVP feature I implemented was adding random planets. It is a button under the pause/resume which allows users to add a random template planet in the solar system, and the system will make realtime changes on every existing planet's behavior according to the newly added planet's parameters. This feature serves our user story that the student wants to see how the simulation would be changed with some modifications.
 
 5. I also helped Elizabeth with her development of intermediary page where user can add customized planets before entering the simulation. Basically, I wrote a function that connects the data input on intermediary page to the main scene so that the customized planets can be correctly shown in the solar system.
+
+6. Besides technical stuff, I also contributed to two team presentations this quarter by offering ideas and narrating.
