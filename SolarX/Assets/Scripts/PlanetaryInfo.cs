@@ -10,6 +10,8 @@ public class PlanetaryInfo : MonoBehaviour
     float[] planetPositions;
     int numPlanets = 14;
 
+    float[] planetDefaultMasses;
+
     public int[] distSetting = {0, 0, 0, 0, 0};
 
     // Start is called before the first frame update
@@ -22,6 +24,7 @@ public class PlanetaryInfo : MonoBehaviour
 
         //Planet masses, in order of distance from the sun
         planetMasses = new float[numPlanets];
+        planetDefaultMasses = new float[numPlanets];
         //If the planet is active (1 is active, 0 is inactive)(could be changed by adding or deleting)
         planetsActive = new bool[numPlanets];
 
@@ -52,6 +55,21 @@ public class PlanetaryInfo : MonoBehaviour
         planetMasses[12] = Random.Range(0.3f, 20.0f); //Random 4
         planetMasses[13] = Random.Range(0.3f, 20.0f); //Random 5
 
+        planetDefaultMasses[0] = 333000.0f; //Sun
+        planetDefaultMasses[1] = 0.5f; //Mercury
+        planetDefaultMasses[2] = 3f; //Venus
+        planetDefaultMasses[3] = 1f; //Earth
+        planetDefaultMasses[4] = 4f; //Mars
+        planetDefaultMasses[5] = 317f; //Jupiter
+        planetDefaultMasses[6] = 95f; //Saturn
+        planetDefaultMasses[7] = 14.5f; //Uranus
+        planetDefaultMasses[8] = 17.15f; //Neptune
+        planetDefaultMasses[9] = Random.Range(0.3f, 20.0f); //Random 1
+        planetDefaultMasses[10] = Random.Range(0.3f, 20.0f); //Random 2
+        planetDefaultMasses[11] = Random.Range(0.3f, 20.0f); //Random 3
+        planetDefaultMasses[12] = Random.Range(0.3f, 20.0f); //Random 4
+        planetDefaultMasses[13] = Random.Range(0.3f, 20.0f); //Random 5
+
         for(int i =0; i < numPlanets - 9; i ++){
             planetPositions[i] = Random.Range(1080f, 1610f);
         }
@@ -77,6 +95,10 @@ public class PlanetaryInfo : MonoBehaviour
 
     public float getPlanetPosition(int index){
         return planetPositions[index];
+    }
+
+    public float getDefaultPlanetMass(int index){
+        return planetDefaultMasses[index];
     }
     
     //setters
