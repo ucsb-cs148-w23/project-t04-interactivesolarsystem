@@ -30,7 +30,8 @@ public class ConnectToDefault : MonoBehaviour
             planetMassF = 1f;
         }else{
             pinfo = test.GetComponent<PlanetaryInfo>();
-            planetMassF = pinfo.getPlanetMass(planetIndex);
+            planetMassF = pinfo.getDefaultPlanetMass(planetIndex);
+            Debug.Log("Default Planet Mass: " + pinfo.getDefaultPlanetMass(planetIndex));
             planetMass = unitToKgs(planetMassF).ToString("0.0000");
         }
 
@@ -40,6 +41,16 @@ public class ConnectToDefault : MonoBehaviour
         AssociatedToggle.isOn = true;
         massInput.interactable = false;
         needsUpdate = false;
+
+        if(test != null){
+            if(Mathf.Abs(pinfo.getDefaultPlanetMass(planetIndex) - pinfo.getPlanetMass(planetIndex)) > 0.0001f){
+                AssociatedToggle.isOn = false;
+                massInput.interactable = true;
+                planetMassF = pinfo.getPlanetMass(planetIndex);
+                planetMass = unitToKgs(planetMassF).ToString("0.0000");
+                massInput.text = planetMass;
+            }
+        }
     }
 
     // Update is called once per frame
@@ -56,6 +67,11 @@ public class ConnectToDefault : MonoBehaviour
             planetMassF = initialMassF;
             planetMass = initialMass;
             Debug.Log("Toggle is on!");
+            needsUpdate = false;
+            if(test != null){
+                pinfo.setPlanetMass(planetIndex, planetMassF);
+            }
+            return;
         }else{
             massInput.interactable = true;
         }
