@@ -31,7 +31,7 @@ We use <a href="itch.io">itch.io<a> platform to host our unity-based project. <a
 
   <img src="https://user-images.githubusercontent.com/93735732/226771170-cd246a4b-9990-4752-b29b-205a6371b659.png" width="500" />
 
-To deploy to itch.io, create an account and create a new project. In the settings when creating the project, select Game for classification, HTML for type of project. Take the build that is in this repo under "SolarXInteractiveGame.zip" and upload it to the game under uploads. Then, manually set the size to be 960x600.
+To deploy to itch.io, create an account and create a new project. In the settings when creating the project, select Game for classification, HTML for type of project. Take the build that is in this repo under "SolarXInteractiveGame.zip" and upload it to the game under uploads. Then, manually set the size to be 960x600. After saving this, the game will be visible on your dashboard and ready to play!
 
 ##
 |Name | Github username |
