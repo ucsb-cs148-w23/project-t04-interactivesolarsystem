@@ -31,7 +31,7 @@ To add planets, users can click on the "Add Planet!" button which will allow the
 
 
 ### Navigation:
-The interactive solar system allows you to navigate the solar system by pressing 'w', 'a', 's', 'd' on keyboard.'z' is to move down and 'space' is to move up, and 'shift' will speed up movement. You can use your mouse to rotate and pan the view. When you are in the solar system, when you click on the scene your mouse icon disappears and you can click on the planets in the solar system using the crosshair in the middle. Pressing 'e' disconnects the controls of the user and makes the mouse reappear and allows a user to click on one of the buttons on the screen of the solar system, pressing 'e' again will reconnect the controls. 'Tab' is a hotkey for pause/resume the simulation. 'q' brings up a window that allows the user to either return to the main menu or back into the game.
+The interactive solar system allows you to navigate the solar system by pressing 'w', 'a', 's', 'd' on keyboard. 'z' is to move down and 'space' is to move up, and 'shift' will speed up movement. You can use your mouse to rotate and pan the view. When you are in the solar system, when you click on the scene your mouse icon disappears and you can click on the planets in the solar system using the crosshair in the middle. Pressing 'e' disconnects the controls of the user and makes the mouse reappear and allows a user to click on one of the buttons on the screen of the solar system, pressing 'e' again will reconnect the controls. 'Tab' is a hotkey for pause/resume the simulation. 'q' brings up a window that allows the user to either return to the main menu or back into the game.
 
 
 ### Simulation Buttons
